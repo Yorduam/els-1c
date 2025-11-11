@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.16">
+	<ConfigVersions>
+		<Metadata name="Catalog.Группы" id="7b6addc5-cd17-4879-8042-0d96296d5ede" configVersion="de0ce60da0a79c42be6557ef9385264500000000">
+			<Metadata name="Catalog.Группы.Attribute.Специальность" id="031e3fca-5ca3-4e56-a47f-c46957b7a93a"/>
+			<Metadata name="Catalog.Группы.Attribute.Набор" id="83672296-2861-46af-b47f-d07369eb05a8"/>
+			<Metadata name="Catalog.Группы.Attribute.КлассныйРуководитель" id="aa3836aa-41f0-47bb-ae96-fc95676b73e2"/>
+			<Metadata name="Catalog.Группы.Attribute.ГодНабора" id="eadf79d4-e30c-4eba-b6a5-92b30d2a45f9"/>
+		</Metadata>
+		<Metadata name="Catalog.Дисциплины" id="8d7fed36-65fb-4a10-9baa-e605035f56ce" configVersion="2ebe79ef97c0db4c93accee0e32917c400000000"/>
+		<Metadata name="Catalog.Дисциплины.Predefined" id="8d7fed36-65fb-4a10-9baa-e605035f56ce.1c" configVersion="2e28c65cd0e82a45bdb463c74b47deb500000000"/>
+		<Metadata name="Catalog.Кадры" id="eb490733-e499-45de-9ffb-fbc1040ee6ea" configVersion="04c8b4ae3a35264eaaaabc78b313dd0e00000000">
+			<Metadata name="Catalog.Кадры.Attribute.НомерТелефона" id="263a11bf-010b-4e96-aff9-8be14738afc3"/>
+			<Metadata name="Catalog.Кадры.Attribute.ДатаРождения" id="27f0f346-fc95-41c0-970d-590494e36537"/>
+			<Metadata name="Catalog.Кадры.Attribute.Преподаватель" id="56965b5d-80eb-402a-8c44-d3f61a966c8f"/>
+			<Metadata name="Catalog.Кадры.Attribute.ЭлектроннаяПочта" id="b27bdeb6-e9c3-44df-8807-27fa00bc4102"/>
+			<Metadata name="Catalog.Кадры.Attribute.Пол" id="dda091b7-94e0-45ba-97b6-a3fd6ba8e8e9"/>
+		</Metadata>
+		<Metadata name="Catalog.Контингент" id="1735068a-a649-48e5-b084-a9d818f30cd3" configVersion="d4d8a79c491a9b4db1cfbca1d221bfe300000000">
+			<Metadata name="Catalog.Контингент.Attribute.ЭлектроннаяПочта" id="0010350a-3f3f-40cb-8631-6b0ad03464bf"/>
+			<Metadata name="Catalog.Контингент.Attribute.ДатаРождения" id="0205bbfd-0c09-4184-9200-b56a1a641228"/>
+			<Metadata name="Catalog.Контингент.Attribute.НомерТелефона" id="08822f82-29b4-496d-894e-5b445e51bca6"/>
+			<Metadata name="Catalog.Контингент.Attribute.Пол" id="f84665d1-afa3-47b9-b795-37bf7f700462"/>
+		</Metadata>
+		<Metadata name="Catalog.Контингент.ObjectModule" id="1735068a-a649-48e5-b084-a9d818f30cd3.0" configVersion="af19567ea67d384da6481d1a7300ed0f00000000"/>
+		<Metadata name="Catalog.Родители" id="041fe22d-a8ec-4c3f-9840-b5f861e7ef0b" configVersion="1bbaf36d46fd9145a75c70f2f83ae43900000000"/>
+		<Metadata name="Catalog.Специальности" id="e8a99b0d-ac9d-4bd6-bea9-e4a7ed4bc2f9" configVersion="9729e3d96e30f94788a92503f16a3fe300000000">
+			<Metadata name="Catalog.Специальности.Attribute.Сокращение" id="3b7dbed9-1624-446b-af1d-4144dc32441e"/>
+		</Metadata>
+		<Metadata name="Catalog.УчебныеГода" id="b24deec9-a313-4eac-9418-af0da1a2ad57" configVersion="38f119d43d2fe14398c19cbcd2934d2a00000000">
+			<Metadata name="Catalog.УчебныеГода.Attribute.ДатаНачала" id="52f7943b-e8c7-4b93-b9c6-ef24af0bafd8"/>
+			<Metadata name="Catalog.УчебныеГода.Attribute.ДатаОкончания" id="7f1ffcc1-8f56-48b5-9ebc-8f61f6ed58d8"/>
+			<Metadata name="Catalog.УчебныеГода.Attribute.Сокращение" id="8ad7b278-8e6d-4907-b161-0d1182de09a1"/>
+		</Metadata>
+		<Metadata name="CommonModule.РаботаДокументов" id="215c3600-b47c-4d3e-aa7f-a51d2c92407d" configVersion="040f66a74ae1cb4ba1634c518e87684a00000000"/>
+		<Metadata name="CommonModule.РаботаСправочников" id="2589504f-d315-4ea3-a315-f56cbefc4d27" configVersion="74b28fe14c6f3146afec6380b767f59700000000"/>
+		<Metadata name="CommonModule.РаботаСправочников.Module" id="2589504f-d315-4ea3-a315-f56cbefc4d27.0" configVersion="e4cb21133cf2ba42ae6ff7745950912800000000"/>
+		<Metadata name="CommonPicture.Администратор" id="7b4c5cb7-18b6-404f-a8f2-9fae3e97c9c6" configVersion="dca6e7c96b1e2d4988cf507068c4ffaf00000000"/>
+		<Metadata name="CommonPicture.Администратор.Picture" id="7b4c5cb7-18b6-404f-a8f2-9fae3e97c9c6.0" configVersion="c507dfe768f10a43907d1d42079dfb5500000000"/>
+		<Metadata name="CommonPicture.Группа" id="8b42e896-728a-4a6b-814b-5f3308c34df3" configVersion="ef8dc4f3843e644e8a21cac5d60fd43f00000000"/>
+		<Metadata name="CommonPicture.Группа.Picture" id="8b42e896-728a-4a6b-814b-5f3308c34df3.0" configVersion="2ea24d7f36dcfc478b5b8596991a9a9c00000000"/>
+		<Metadata name="CommonPicture.Директор" id="e2402bbd-7130-4cf5-bc9c-0b72066968d8" configVersion="5f33b86fba4fac40965d115cc6b480e800000000"/>
+		<Metadata name="CommonPicture.Директор.Picture" id="e2402bbd-7130-4cf5-bc9c-0b72066968d8.0" configVersion="c31ffb1d792c6846b26f2836398c1bd900000000"/>
+		<Metadata name="CommonPicture.Дом" id="9707483f-4c82-4273-87c8-fe622e6fa8d4" configVersion="3be7bde2af9c274eb44134aabb74d19100000000"/>
+		<Metadata name="CommonPicture.Дом.Picture" id="9707483f-4c82-4273-87c8-fe622e6fa8d4.0" configVersion="af64928a67ea414fbd3527226e2307cf00000000"/>
+		<Metadata name="CommonPicture.Методичка" id="4d096e32-965e-473a-90c7-3545c7c0598b" configVersion="75d4ed247777c946b6c81a81fc217a1a00000000"/>
+		<Metadata name="CommonPicture.Методичка.Picture" id="4d096e32-965e-473a-90c7-3545c7c0598b.0" configVersion="6c9f0545c13091459c4b820be1f6bfcd00000000"/>
+		<Metadata name="CommonPicture.Оценка" id="e18074c8-a080-41d1-a824-b203d06c53c4" configVersion="b279067dcc218442830b40d107bb440000000000"/>
+		<Metadata name="CommonPicture.Оценка.Picture" id="e18074c8-a080-41d1-a824-b203d06c53c4.0" configVersion="df2097d8ebbd7c4ab8770d3fd87bb22400000000"/>
+		<Metadata name="CommonPicture.Папка" id="89f5ed3a-64f1-4908-a0a5-b1f548b4fabd" configVersion="1bf00f89b5b63148911b49b50290396800000000"/>
+		<Metadata name="CommonPicture.Папка.Picture" id="89f5ed3a-64f1-4908-a0a5-b1f548b4fabd.0" configVersion="8987e8133b4cf545b63dc60afaba072500000000"/>
+		<Metadata name="CommonPicture.ЧеловекЖенщина" id="13e052a1-17f3-4002-9fd2-1ae2718c0632" configVersion="9f87a29d3463084194dcfbd5fc827a0000000000"/>
+		<Metadata name="CommonPicture.ЧеловекЖенщина.Picture" id="13e052a1-17f3-4002-9fd2-1ae2718c0632.0" configVersion="8948351a5563e74895407f7aba669ad600000000"/>
+		<Metadata name="CommonPicture.ЧеловекМужчина" id="81e08143-12fe-43d3-bfff-cfbe96bda1b6" configVersion="a627e96311791c49b2dd293c619df62900000000"/>
+		<Metadata name="CommonPicture.ЧеловекМужчина.Picture" id="81e08143-12fe-43d3-bfff-cfbe96bda1b6.0" configVersion="1a7db35034d7054589fe657365050e5400000000"/>
+		<Metadata name="Configuration.Конфигурация" id="fc6bb08c-b454-4902-8082-49a8e64af272" configVersion="cf2e43264fe8084dade0a8ef8d42345800000000"/>
+		<Metadata name="Configuration.Конфигурация.ClientApplicationInterface" id="b6a9e952-0d26-4d13-a4d1-4118b9c3e81c.b" configVersion="12b4808d9509d84ea1ea24e698ada1c000000000"/>
+		<Metadata name="Configuration.Конфигурация.MainSectionPicture" id="b6a9e952-0d26-4d13-a4d1-4118b9c3e81c.c" configVersion="fac2951e7b0eb64cac17e895c889a85200000000"/>
+		<Metadata name="Enum.Пол" id="5c0c2127-eda3-410d-b8a2-649084200f24" configVersion="93236fcabf49db4a87f4b269266fd82700000000">
+			<Metadata name="Enum.Пол.EnumValue.Мужчина" id="58644b76-0cae-4aea-9864-e994a4f7e2f0"/>
+			<Metadata name="Enum.Пол.EnumValue.Женщина" id="e7f5e115-a7c4-403c-b3f1-a0f17564a470"/>
+		</Metadata>
+		<Metadata name="Language.Русский" id="c72211a4-ab05-4810-9ec5-d926df8c51d0" configVersion="fe1dadde2431cf4b829834dd0ddc265e00000000"/>
+		<Metadata name="Style.Основной" id="ea3821cd-b39e-4cdc-94fb-1ecd65781e4a" configVersion="405630eb680c8f47baf03cd526b175d600000000"/>
+		<Metadata name="Style.Основной.Style" id="ea3821cd-b39e-4cdc-94fb-1ecd65781e4a.0" configVersion="dbed2d76c02af441a67745962786faea00000000"/>
+		<Metadata name="Subsystem.Администрация" id="f02935ff-364e-4d6f-9838-20a3d72096c2" configVersion="847f399351582145816e6ee7e5ad520c00000000"/>
+		<Metadata name="Subsystem.Администрация.Subsystem.Кадры" id="da5c5fe1-b940-4bdb-9d51-61776ae830de" configVersion="d3dd7215f393424bb35aa426618475cf00000000"/>
+		<Metadata name="Subsystem.Администрация.Subsystem.Образование" id="27c41f50-59b3-44f1-843f-3f760b273abc" configVersion="f0baea7f97521f4a942699ad37c4dfe700000000"/>
+		<Metadata name="Subsystem.Контингент" id="15e4dfc1-c6bb-4b12-a30f-9c76b2ed7e1b" configVersion="47f40e1cc8fd284ca158a85902ef9ac600000000"/>
+		<Metadata name="Subsystem.МетодическийОтдел" id="de83b14b-3583-4ce9-9c86-07c544bd6e7c" configVersion="3209261cabf77a40be0fce61ba47661900000000"/>
+		<Metadata name="Subsystem.МетодическийОтдел.Help" id="de83b14b-3583-4ce9-9c86-07c544bd6e7c.0" configVersion="f435ebb7d8f94749bea525e0a7c5c14600000000"/>
+		<Metadata name="Subsystem.СекторУспеваемости" id="27d7a4e5-9cec-48b2-9fce-ac1c4dcbb1cd" configVersion="2cb44790f830b849ab245867f47a395a00000000"/>
+		<Metadata name="Subsystem.СистемныйАдминистратор" id="4002a3c2-26e0-4147-8945-4107bd863f0b" configVersion="189e55efb35a9a428edd04532a2e069100000000"/>
+		<Metadata name="Subsystem.УчебнаяЧасть" id="6a14f513-a5c6-416c-a720-f104ef28b54e" configVersion="d08b129841ffd34e88f111277b2a70fe00000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
