@@ -21,8 +21,11 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Контингент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Родители</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">01ca23d3-974c-42c2-8ce3-526b8fba4e4b</xr:Item>
 			</Content>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Subsystem>СтуденческийОтделКадров</Subsystem>
+		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

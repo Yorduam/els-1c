@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
-	<Subsystem uuid="4002a3c2-26e0-4147-8945-4107bd863f0b">
+	<Subsystem uuid="d2ba4e4b-f4d6-4dff-bdb7-829c1e366034">
 		<Properties>
-			<Name>СистемныйАдминистратор</Name>
+			<Name>СтуденческийОтделКадров</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Системный администратор</v8:content>
+					<v8:content>Студенческий отдел кадров</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -14,14 +14,15 @@
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<UseOneCommand>false</UseOneCommand>
 			<Explanation/>
-			<Picture>
-				<xr:Ref>CommonPicture.Администратор</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
-			</Picture>
-			<Content/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗачислениеОбучающихся</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ЧисленностьГруппы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.АктуальностьКонтингента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтчислениеОбучающихся</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПереводОбучающихся</xr:Item>
+			</Content>
 		</Properties>
-		<ChildObjects>
-			<Subsystem>НастройкиОбразования</Subsystem>
-		</ChildObjects>
+		<ChildObjects/>
 	</Subsystem>
 </MetaDataObject>

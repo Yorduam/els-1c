@@ -33,7 +33,12 @@
 		</InternalInfo>
 		<Properties>
 			<Name>Конфигурация</Name>
-			<Synonym/>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЭУС</v8:content>
+				</v8:item>
+			</Synonym>
 			<Comment/>
 			<NamePrefix/>
 			<ConfigurationExtensionCompatibilityMode>Version8_3_23</ConfigurationExtensionCompatibilityMode>
@@ -43,8 +48,8 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
-			<Vendor/>
-			<Version/>
+			<Vendor>Илья Минин</Vendor>
+			<Version>0.0.2</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -208,8 +213,18 @@
 			<DefaultInterface/>
 			<DefaultStyle>Style.Основной</DefaultStyle>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
-			<BriefInformation/>
-			<DetailedInformation/>
+			<BriefInformation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Электронная Учебная Система</v8:content>
+				</v8:item>
+			</BriefInformation>
+			<DetailedInformation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данное прикладное решение предназначена для автоматизации процессов по выставлению, учету и выведению успеваемости студентов групп учебного заведения</v8:content>
+				</v8:item>
+			</DetailedInformation>
 			<Copyright>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -229,14 +244,15 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<Subsystem>СистемныйАдминистратор</Subsystem>
-			<Subsystem>СекторУспеваемости</Subsystem>
+			<Subsystem>Администрация</Subsystem>
 			<Subsystem>Контингент</Subsystem>
 			<Subsystem>МетодическийОтдел</Subsystem>
-			<Subsystem>Администрация</Subsystem>
+			<Subsystem>СекторУспеваемости</Subsystem>
+			<Subsystem>СистемныйАдминистратор</Subsystem>
 			<Subsystem>УчебнаяЧасть</Subsystem>
 			<Style>Основной</Style>
 			<CommonPicture>Администратор</CommonPicture>
+			<CommonPicture>Группа</CommonPicture>
 			<CommonPicture>Директор</CommonPicture>
 			<CommonPicture>Дом</CommonPicture>
 			<CommonPicture>Методичка</CommonPicture>
@@ -244,17 +260,29 @@
 			<CommonPicture>Папка</CommonPicture>
 			<CommonPicture>ЧеловекЖенщина</CommonPicture>
 			<CommonPicture>ЧеловекМужчина</CommonPicture>
-			<CommonPicture>Группа</CommonPicture>
 			<CommonModule>РаботаДокументов</CommonModule>
 			<CommonModule>РаботаСправочников</CommonModule>
+			<CommonAttribute>НомерТелефона</CommonAttribute>
+			<CommonAttribute>ЭлектроннаяПочта</CommonAttribute>
 			<Catalog>Группы</Catalog>
 			<Catalog>Дисциплины</Catalog>
 			<Catalog>Кадры</Catalog>
 			<Catalog>Контингент</Catalog>
+			<Catalog>РабочиеПрограммы</Catalog>
 			<Catalog>Родители</Catalog>
 			<Catalog>Специальности</Catalog>
 			<Catalog>УчебныеГода</Catalog>
+			<Catalog>НастройкаКурса</Catalog>
+			<Document>ЗачислениеОбучающихся</Document>
+			<Document>ОтчислениеОбучающихся</Document>
+			<Document>ПереводОбучающихся</Document>
+			<DocumentNumerator>ДвижениеКонтингента</DocumentNumerator>
 			<Enum>Пол</Enum>
+			<Enum>ПромежуточнаяАттестация</Enum>
+			<Enum>ФормаОрганизацииОбучения</Enum>
+			<Enum>ДвижениеКонтингента</Enum>
+			<InformationRegister>АктуальностьКонтингента</InformationRegister>
+			<AccumulationRegister>ЧисленностьГруппы</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
