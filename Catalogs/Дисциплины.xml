@@ -296,8 +296,8 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm/>
-			<DefaultFolderForm/>
+			<DefaultObjectForm>Catalog.Дисциплины.Form.ФормаЭлемента</DefaultObjectForm>
+			<DefaultFolderForm>Catalog.Дисциплины.Form.ФормаГруппы</DefaultFolderForm>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
@@ -322,6 +322,9 @@
 			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Form>ФормаЭлемента</Form>
+			<Form>ФормаГруппы</Form>
+		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

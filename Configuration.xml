@@ -277,12 +277,14 @@
 			<Document>ОтчислениеОбучающихся</Document>
 			<Document>ПереводОбучающихся</Document>
 			<DocumentNumerator>ДвижениеКонтингента</DocumentNumerator>
+			<Enum>ДвижениеКонтингента</Enum>
 			<Enum>Пол</Enum>
 			<Enum>ПромежуточнаяАттестация</Enum>
+			<Enum>ФормаОбразования</Enum>
 			<Enum>ФормаОрганизацииОбучения</Enum>
-			<Enum>ДвижениеКонтингента</Enum>
 			<InformationRegister>АктуальностьКонтингента</InformationRegister>
 			<AccumulationRegister>ЧисленностьГруппы</AccumulationRegister>
+			<AccumulationRegister>АктивныйКонтингент</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

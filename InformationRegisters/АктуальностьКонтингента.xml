@@ -147,7 +147,46 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="c08a8123-8141-4972-a040-d74a890443f5">
+			<Resource uuid="057eefcc-c763-41e3-8596-8379982e084e">
+				<Properties>
+					<Name>Обучается</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обучается</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Resource>
+			<Attribute uuid="63f5fc68-39fa-4fc6-aec0-4e1ba82fbfbd">
 				<Properties>
 					<Name>ДвижениеКонтингента</Name>
 					<Synonym>
@@ -185,7 +224,7 @@
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
-			</Resource>
+			</Attribute>
 			<Attribute uuid="fd0df2f6-ed2f-488e-ab6c-93cd88fe3077">
 				<Properties>
 					<Name>Причина</Name>
@@ -231,11 +270,11 @@
 			</Attribute>
 			<Dimension uuid="83b690b3-a855-4da9-8a71-9c19262a397c">
 				<Properties>
-					<Name>Студент</Name>
+					<Name>Обучающийся</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Студент</v8:content>
+							<v8:content>Обучающийся</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

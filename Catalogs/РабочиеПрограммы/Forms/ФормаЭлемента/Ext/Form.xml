@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<Enabled>false</Enabled>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<BackColor>style:AuxiliaryNavigationColor</BackColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Автор" id="22">
+			<DataPath>Объект.Автор</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="АвторКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<UsualGroup name="Группа2" id="61">
+			<HorizontalStretch>false</HorizontalStretch>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="62"/>
+			<ChildItems>
+				<InputField name="Владелец" id="7">
+					<DataPath>Объект.Owner</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВладелецКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="Специальность" id="10">
+					<DataPath>Объект.Специальность</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СпециальностьКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="СпециальностьРасширеннаяПодсказка" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="59">
+			<HorizontalStretch>false</HorizontalStretch>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<InputField name="ГодСоставления" id="16">
+					<DataPath>Объект.ГодСоставления</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ГодСоставленияКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ГодСоставленияРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="НаБазе" id="13">
+					<DataPath>Объект.НаБазе</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НаБазеКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="НаБазеРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Часы" id="19">
+			<DataPath>Объект.Часы</DataPath>
+			<Enabled>false</Enabled>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЧасыКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ЧасыРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<Table name="ТематическийПлан" id="25">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТематическийПлан</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТематическийПланКонтекстноеМеню" id="26"/>
+			<AutoCommandBar name="ТематическийПланКоманднаяПанель" id="27"/>
+			<ExtendedTooltip name="ТематическийПланРасширеннаяПодсказка" id="28"/>
+			<SearchStringAddition name="ТематическийПланСтрокаПоиска" id="29">
+				<AdditionSource>
+					<Item>ТематическийПлан</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТематическийПланСтрокаПоискаКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ТематическийПланСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТематическийПланСостояниеПросмотра" id="32">
+				<AdditionSource>
+					<Item>ТематическийПлан</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТематическийПланСостояниеПросмотраКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ТематическийПланСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТематическийПланУправлениеПоиском" id="35">
+				<AdditionSource>
+					<Item>ТематическийПлан</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТематическийПланУправлениеПоискомКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="ТематическийПланУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТематическийПланНомерСтроки" id="38">
+					<DataPath>Объект.ТематическийПлан.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТематическийПланНомерСтрокиКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТематическийПланНомерСтрокиРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<InputField name="ТематическийПланСеместр" id="41">
+					<DataPath>Объект.ТематическийПлан.Семестр</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТематическийПланСеместрКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТематическийПланСеместрРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ТематическийПланТема" id="44">
+					<DataPath>Объект.ТематическийПлан.Тема</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТематическийПланТемаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТематическийПланТемаРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ТематическийПланСодержание" id="47">
+					<DataPath>Объект.ТематическийПлан.Содержание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТематическийПланСодержаниеКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ТематическийПланСодержаниеРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ТематическийПланФормаОрганизации" id="50">
+					<DataPath>Объект.ТематическийПлан.ФормаОрганизации</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТематическийПланФормаОрганизацииКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ТематическийПланФормаОрганизацииРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="ТематическийПланДомашнееЗадание" id="53">
+					<DataPath>Объект.ТематическийПлан.ДомашнееЗадание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТематическийПланДомашнееЗаданиеКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ТематическийПланДомашнееЗаданиеРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="ТематическийПланЛитература" id="56">
+					<DataPath>Объект.ТематическийПлан.Литература</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТематическийПланЛитератураКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ТематическийПланЛитератураРасширеннаяПодсказка" id="58"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.РабочиеПрограммы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

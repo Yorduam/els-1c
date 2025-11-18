@@ -21,6 +21,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.АктуальностьКонтингента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтчислениеОбучающихся</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПереводОбучающихся</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.АктивныйКонтингент</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
