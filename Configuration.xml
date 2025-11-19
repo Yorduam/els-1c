@@ -49,7 +49,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Илья Минин</Vendor>
-			<Version>0.0.2</Version>
+			<Version>0.0.4</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -282,6 +282,9 @@
 			<Enum>ПромежуточнаяАттестация</Enum>
 			<Enum>ФормаОбразования</Enum>
 			<Enum>ФормаОрганизацииОбучения</Enum>
+			<Report>СоставГруппы</Report>
+			<Report>ВыводРабочихПрограмм</Report>
+			<Report>ВыводКонтингента</Report>
 			<InformationRegister>АктуальностьКонтингента</InformationRegister>
 			<AccumulationRegister>ЧисленностьГруппы</AccumulationRegister>
 			<AccumulationRegister>АктивныйКонтингент</AccumulationRegister>

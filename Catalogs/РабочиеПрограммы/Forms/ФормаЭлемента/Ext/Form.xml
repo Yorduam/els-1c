@@ -78,91 +78,201 @@
 			<ContextMenu name="ЧасыКонтекстноеМеню" id="20"/>
 			<ExtendedTooltip name="ЧасыРасширеннаяПодсказка" id="21"/>
 		</InputField>
-		<Table name="ТематическийПлан" id="25">
-			<Representation>List</Representation>
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
-			<DataPath>Объект.ТематическийПлан</DataPath>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="ТематическийПланКонтекстноеМеню" id="26"/>
-			<AutoCommandBar name="ТематическийПланКоманднаяПанель" id="27"/>
-			<ExtendedTooltip name="ТематическийПланРасширеннаяПодсказка" id="28"/>
-			<SearchStringAddition name="ТематическийПланСтрокаПоиска" id="29">
-				<AdditionSource>
-					<Item>ТематическийПлан</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ТематическийПланСтрокаПоискаКонтекстноеМеню" id="30"/>
-				<ExtendedTooltip name="ТематическийПланСтрокаПоискаРасширеннаяПодсказка" id="31"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="ТематическийПланСостояниеПросмотра" id="32">
-				<AdditionSource>
-					<Item>ТематическийПлан</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ТематическийПланСостояниеПросмотраКонтекстноеМеню" id="33"/>
-				<ExtendedTooltip name="ТематическийПланСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="ТематическийПланУправлениеПоиском" id="35">
-				<AdditionSource>
-					<Item>ТематическийПлан</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="ТематическийПланУправлениеПоискомКонтекстноеМеню" id="36"/>
-				<ExtendedTooltip name="ТематическийПланУправлениеПоискомРасширеннаяПодсказка" id="37"/>
-			</SearchControlAddition>
+		<Pages name="Таблицы" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблицы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблицы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ТаблицыРасширеннаяПодсказка" id="64"/>
 			<ChildItems>
-				<LabelField name="ТематическийПланНомерСтроки" id="38">
-					<DataPath>Объект.ТематическийПлан.LineNumber</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ТематическийПланНомерСтрокиКонтекстноеМеню" id="39"/>
-					<ExtendedTooltip name="ТематическийПланНомерСтрокиРасширеннаяПодсказка" id="40"/>
-				</LabelField>
-				<InputField name="ТематическийПланСеместр" id="41">
-					<DataPath>Объект.ТематическийПлан.Семестр</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ТематическийПланСеместрКонтекстноеМеню" id="42"/>
-					<ExtendedTooltip name="ТематическийПланСеместрРасширеннаяПодсказка" id="43"/>
-				</InputField>
-				<InputField name="ТематическийПланТема" id="44">
-					<DataPath>Объект.ТематическийПлан.Тема</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ТематическийПланТемаКонтекстноеМеню" id="45"/>
-					<ExtendedTooltip name="ТематическийПланТемаРасширеннаяПодсказка" id="46"/>
-				</InputField>
-				<InputField name="ТематическийПланСодержание" id="47">
-					<DataPath>Объект.ТематическийПлан.Содержание</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ТематическийПланСодержаниеКонтекстноеМеню" id="48"/>
-					<ExtendedTooltip name="ТематическийПланСодержаниеРасширеннаяПодсказка" id="49"/>
-				</InputField>
-				<InputField name="ТематическийПланФормаОрганизации" id="50">
-					<DataPath>Объект.ТематическийПлан.ФормаОрганизации</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ТематическийПланФормаОрганизацииКонтекстноеМеню" id="51"/>
-					<ExtendedTooltip name="ТематическийПланФормаОрганизацииРасширеннаяПодсказка" id="52"/>
-				</InputField>
-				<InputField name="ТематическийПланДомашнееЗадание" id="53">
-					<DataPath>Объект.ТематическийПлан.ДомашнееЗадание</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ТематическийПланДомашнееЗаданиеКонтекстноеМеню" id="54"/>
-					<ExtendedTooltip name="ТематическийПланДомашнееЗаданиеРасширеннаяПодсказка" id="55"/>
-				</InputField>
-				<InputField name="ТематическийПланЛитература" id="56">
-					<DataPath>Объект.ТематическийПлан.Литература</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ТематическийПланЛитератураКонтекстноеМеню" id="57"/>
-					<ExtendedTooltip name="ТематическийПланЛитератураРасширеннаяПодсказка" id="58"/>
-				</InputField>
+				<Page name="Страница1" id="65">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тематический план</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="Страница1РасширеннаяПодсказка" id="66"/>
+					<ChildItems>
+						<Table name="ТематическийПлан" id="25">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ТематическийПлан</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТематическийПланКонтекстноеМеню" id="26"/>
+							<AutoCommandBar name="ТематическийПланКоманднаяПанель" id="27"/>
+							<ExtendedTooltip name="ТематическийПланРасширеннаяПодсказка" id="28"/>
+							<SearchStringAddition name="ТематическийПланСтрокаПоиска" id="29">
+								<AdditionSource>
+									<Item>ТематическийПлан</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТематическийПланСтрокаПоискаКонтекстноеМеню" id="30"/>
+								<ExtendedTooltip name="ТематическийПланСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТематическийПланСостояниеПросмотра" id="32">
+								<AdditionSource>
+									<Item>ТематическийПлан</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТематическийПланСостояниеПросмотраКонтекстноеМеню" id="33"/>
+								<ExtendedTooltip name="ТематическийПланСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТематическийПланУправлениеПоиском" id="35">
+								<AdditionSource>
+									<Item>ТематическийПлан</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТематическийПланУправлениеПоискомКонтекстноеМеню" id="36"/>
+								<ExtendedTooltip name="ТематическийПланУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ТематическийПланПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ТематическийПланНомерСтроки" id="38">
+									<DataPath>Объект.ТематическийПлан.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТематическийПланНомерСтрокиКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ТематическийПланНомерСтрокиРасширеннаяПодсказка" id="40"/>
+								</LabelField>
+								<InputField name="ТематическийПланСеместр" id="41">
+									<DataPath>Объект.ТематическийПлан.Семестр</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТематическийПланСеместрКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ТематическийПланСеместрРасширеннаяПодсказка" id="43"/>
+								</InputField>
+								<InputField name="ТематическийПланТема" id="44">
+									<DataPath>Объект.ТематическийПлан.Тема</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТематическийПланТемаКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="ТематическийПланТемаРасширеннаяПодсказка" id="46"/>
+								</InputField>
+								<InputField name="ТематическийПланСодержание" id="47">
+									<DataPath>Объект.ТематическийПлан.Содержание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТематическийПланСодержаниеКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ТематическийПланСодержаниеРасширеннаяПодсказка" id="49"/>
+								</InputField>
+								<InputField name="ТематическийПланФормаОрганизации" id="50">
+									<DataPath>Объект.ТематическийПлан.ФормаОрганизации</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТематическийПланФормаОрганизацииКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="ТематическийПланФормаОрганизацииРасширеннаяПодсказка" id="52"/>
+								</InputField>
+								<InputField name="ТематическийПланДомашнееЗадание" id="53">
+									<DataPath>Объект.ТематическийПлан.ДомашнееЗадание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТематическийПланДомашнееЗаданиеКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="ТематическийПланДомашнееЗаданиеРасширеннаяПодсказка" id="55"/>
+								</InputField>
+								<InputField name="ТематическийПланЛитература" id="56">
+									<DataPath>Объект.ТематическийПлан.Литература</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТематическийПланЛитератураКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="ТематическийПланЛитератураРасширеннаяПодсказка" id="58"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Страница2" id="67">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Компетенции</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница2</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="Страница2РасширеннаяПодсказка" id="68"/>
+					<ChildItems>
+						<Table name="Компетенции" id="69">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Компетенции</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="КомпетенцииКонтекстноеМеню" id="70"/>
+							<AutoCommandBar name="КомпетенцииКоманднаяПанель" id="71"/>
+							<ExtendedTooltip name="КомпетенцииРасширеннаяПодсказка" id="72"/>
+							<SearchStringAddition name="КомпетенцииСтрокаПоиска" id="73">
+								<AdditionSource>
+									<Item>Компетенции</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КомпетенцииСтрокаПоискаКонтекстноеМеню" id="74"/>
+								<ExtendedTooltip name="КомпетенцииСтрокаПоискаРасширеннаяПодсказка" id="75"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КомпетенцииСостояниеПросмотра" id="76">
+								<AdditionSource>
+									<Item>Компетенции</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КомпетенцииСостояниеПросмотраКонтекстноеМеню" id="77"/>
+								<ExtendedTooltip name="КомпетенцииСостояниеПросмотраРасширеннаяПодсказка" id="78"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КомпетенцииУправлениеПоиском" id="79">
+								<AdditionSource>
+									<Item>Компетенции</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КомпетенцииУправлениеПоискомКонтекстноеМеню" id="80"/>
+								<ExtendedTooltip name="КомпетенцииУправлениеПоискомРасширеннаяПодсказка" id="81"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="Компетенции1НомерСтроки" id="82">
+									<DataPath>Объект.Компетенции.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Компетенции1НомерСтрокиКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="Компетенции1НомерСтрокиРасширеннаяПодсказка" id="84"/>
+								</LabelField>
+								<InputField name="Компетенции1КодКомпетенции" id="85">
+									<DataPath>Объект.Компетенции.КодКомпетенции</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="Компетенции1КодКомпетенцииКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="Компетенции1КодКомпетенцииРасширеннаяПодсказка" id="87"/>
+								</InputField>
+								<InputField name="Компетенции1НаименованиеКомпетенции" id="88">
+									<DataPath>Объект.Компетенции.НаименованиеКомпетенции</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="Компетенции1НаименованиеКомпетенцииКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="Компетенции1НаименованиеКомпетенцииРасширеннаяПодсказка" id="90"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 			</ChildItems>
-		</Table>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
