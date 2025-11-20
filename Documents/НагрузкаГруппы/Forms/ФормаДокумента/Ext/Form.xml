@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Основное" id="108">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная информация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основное</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ОсновноеРасширеннаяПодсказка" id="109"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Реквизиты" id="110">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизиты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизиты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="РеквизитыРасширеннаяПодсказка" id="111"/>
+			<ChildItems>
+				<InputField name="Группа" id="7">
+					<DataPath>Объект.Группа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<ClearButton>true</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>false</OpenButton>
+					<CreateButton>false</CreateButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ГруппаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="9"/>
+					<Events>
+						<Event name="OnChange">ГруппаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Курс" id="10">
+					<DataPath>Объект.Курс</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбирая курс, учебный план распределяет семестры на I и II полугодие</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<ClearButton>true</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>false</OpenButton>
+					<CreateButton>false</CreateButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КурсКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="КурсРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="УчебныйГод" id="13">
+					<DataPath>Объект.УчебныйГод</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>false</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<ClearButton>false</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>false</OpenButton>
+					<CreateButton>false</CreateButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выберите группу</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="УчебныйГодКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="УчебныйГодРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="СуммаЧасов" id="114">
+					<DataPath>Объект.СуммаЧасов</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расчитывается автоматически</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СуммаЧасовКонтекстноеМеню" id="115"/>
+					<ExtendedTooltip name="СуммаЧасовРасширеннаяПодсказка" id="116"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="УчебныйПлан" id="112">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учебный план</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учебный план</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<ExtendedTooltip name="УчебныйПланРасширеннаяПодсказка" id="113"/>
+			<ChildItems>
+				<Table name="Содержание" id="20">
+					<Representation>List</Representation>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Footer>true</Footer>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.Содержание</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СодержаниеКонтекстноеМеню" id="21"/>
+					<AutoCommandBar name="СодержаниеКоманднаяПанель" id="22"/>
+					<ExtendedTooltip name="СодержаниеРасширеннаяПодсказка" id="23"/>
+					<SearchStringAddition name="СодержаниеСтрокаПоиска" id="24">
+						<AdditionSource>
+							<Item>Содержание</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СодержаниеСтрокаПоискаКонтекстноеМеню" id="25"/>
+						<ExtendedTooltip name="СодержаниеСтрокаПоискаРасширеннаяПодсказка" id="26"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СодержаниеСостояниеПросмотра" id="27">
+						<AdditionSource>
+							<Item>Содержание</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СодержаниеСостояниеПросмотраКонтекстноеМеню" id="28"/>
+						<ExtendedTooltip name="СодержаниеСостояниеПросмотраРасширеннаяПодсказка" id="29"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СодержаниеУправлениеПоиском" id="30">
+						<AdditionSource>
+							<Item>Содержание</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СодержаниеУправлениеПоискомКонтекстноеМеню" id="31"/>
+						<ExtendedTooltip name="СодержаниеУправлениеПоискомРасширеннаяПодсказка" id="32"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">СодержаниеПередНачаломДобавления</Event>
+						<Event name="BeforeDeleteRow">СодержаниеПередУдалением</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="СодержаниеНомерСтроки" id="33">
+							<DataPath>Объект.Содержание.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СодержаниеНомерСтрокиКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="СодержаниеНомерСтрокиРасширеннаяПодсказка" id="35"/>
+						</LabelField>
+						<ColumnGroup name="СодержаниеГруппа1" id="129">
+							<ExtendedTooltip name="СодержаниеГруппа1РасширеннаяПодсказка" id="130"/>
+							<ChildItems>
+								<InputField name="СодержаниеДисциплина" id="39">
+									<DataPath>Объект.Содержание.Дисциплина</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СодержаниеДисциплинаКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="СодержаниеДисциплинаРасширеннаяПодсказка" id="41"/>
+								</InputField>
+								<InputField name="СодержаниеРабочаяПрограмма" id="42">
+									<DataPath>Объект.Содержание.РабочаяПрограмма</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СодержаниеРабочаяПрограммаКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="СодержаниеРабочаяПрограммаРасширеннаяПодсказка" id="44"/>
+									<Events>
+										<Event name="OnChange">СодержаниеРабочаяПрограммаПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="СодержаниеВсегоЧасов" id="117">
+							<DataPath>Объект.Содержание.ВсегоЧасов</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterBackColor>style:NavigationColor</FooterBackColor>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<BackColor>style:AuxiliaryNavigationColor</BackColor>
+							<ContextMenu name="СодержаниеВсегоЧасовКонтекстноеМеню" id="118"/>
+							<ExtendedTooltip name="СодержаниеВсегоЧасовРасширеннаяПодсказка" id="119"/>
+						</InputField>
+						<InputField name="СодержаниеВсегоЧасовЛекции" id="120">
+							<DataPath>Объект.Содержание.ВсегоЧасовЛекции</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterBackColor>style:NavigationColor</FooterBackColor>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<BackColor>style:AuxiliaryNavigationColor</BackColor>
+							<ContextMenu name="СодержаниеВсегоЧасовЛекцииКонтекстноеМеню" id="121"/>
+							<ExtendedTooltip name="СодержаниеВсегоЧасовЛекцииРасширеннаяПодсказка" id="122"/>
+						</InputField>
+						<InputField name="СодержаниеВсегоЧасовПрактики" id="123">
+							<DataPath>Объект.Содержание.ВсегоЧасовПрактики</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterBackColor>style:NavigationColor</FooterBackColor>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<BackColor>style:AuxiliaryNavigationColor</BackColor>
+							<ContextMenu name="СодержаниеВсегоЧасовПрактикиКонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="СодержаниеВсегоЧасовПрактикиРасширеннаяПодсказка" id="125"/>
+						</InputField>
+						<InputField name="СодержаниеВсегоЧасовАттестации" id="126">
+							<DataPath>Объект.Содержание.ВсегоЧасовАттестации</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterBackColor>style:NavigationColor</FooterBackColor>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<BackColor>style:AuxiliaryNavigationColor</BackColor>
+							<ContextMenu name="СодержаниеВсегоЧасовАттестацииКонтекстноеМеню" id="127"/>
+							<ExtendedTooltip name="СодержаниеВсегоЧасовАттестацииРасширеннаяПодсказка" id="128"/>
+						</InputField>
+						<InputField name="СодержаниеПреподаватель" id="45">
+							<DataPath>Объект.Содержание.Преподаватель</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СодержаниеПреподавательКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="СодержаниеПреподавательРасширеннаяПодсказка" id="47"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="Детализация" id="50">
+					<Representation>List</Representation>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Footer>true</Footer>
+					<DataPath>Объект.Детализация</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+						<ExcludedCommand>SearchHistory</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ДетализацияКонтекстноеМеню" id="51"/>
+					<AutoCommandBar name="ДетализацияКоманднаяПанель" id="52"/>
+					<ExtendedTooltip name="ДетализацияРасширеннаяПодсказка" id="53"/>
+					<SearchStringAddition name="ДетализацияСтрокаПоиска" id="54">
+						<Enabled>false</Enabled>
+						<AdditionSource>
+							<Item>Детализация</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДетализацияСтрокаПоискаКонтекстноеМеню" id="55"/>
+						<ExtendedTooltip name="ДетализацияСтрокаПоискаРасширеннаяПодсказка" id="56"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДетализацияСостояниеПросмотра" id="57">
+						<AdditionSource>
+							<Item>Детализация</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДетализацияСостояниеПросмотраКонтекстноеМеню" id="58"/>
+						<ExtendedTooltip name="ДетализацияСостояниеПросмотраРасширеннаяПодсказка" id="59"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДетализацияУправлениеПоиском" id="60">
+						<AdditionSource>
+							<Item>Детализация</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДетализацияУправлениеПоискомКонтекстноеМеню" id="61"/>
+						<ExtendedTooltip name="ДетализацияУправлениеПоискомРасширеннаяПодсказка" id="62"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeDeleteRow">ДетализацияПередУдалением</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="ДетализацияНомерСтроки" id="63">
+							<DataPath>Объект.Детализация.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterText>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Итог:</v8:content>
+								</v8:item>
+							</FooterText>
+							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ContextMenu name="ДетализацияНомерСтрокиКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="ДетализацияНомерСтрокиРасширеннаяПодсказка" id="65"/>
+						</LabelField>
+						<InputField name="ДетализацияЧислоНедель_I" id="66">
+							<DataPath>Объект.Детализация.ЧислоНедель_I</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterBackColor>web:OrangeRed</FooterBackColor>
+							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<BackColor>web:Orange</BackColor>
+							<ContextMenu name="ДетализацияЧислоНедель_IКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="ДетализацияЧислоНедель_IРасширеннаяПодсказка" id="68"/>
+						</InputField>
+						<InputField name="ДетализацияВсегоЧасов_I" id="69">
+							<DataPath>Объект.Детализация.ВсегоЧасов_I</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterBackColor>web:OrangeRed</FooterBackColor>
+							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<BackColor>web:Orange</BackColor>
+							<ContextMenu name="ДетализацияВсегоЧасов_IКонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="ДетализацияВсегоЧасов_IРасширеннаяПодсказка" id="71"/>
+						</InputField>
+						<InputField name="ДетализацияЧасыКонсультаций_I" id="72">
+							<DataPath>Объект.Детализация.ЧасыКонсультаций_I</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterBackColor>web:OrangeRed</FooterBackColor>
+							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<BackColor>web:Orange</BackColor>
+							<ContextMenu name="ДетализацияЧасыКонсультаций_IКонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="ДетализацияЧасыКонсультаций_IРасширеннаяПодсказка" id="74"/>
+						</InputField>
+						<InputField name="ДетализацияЧасыЛекций_I" id="75">
+							<DataPath>Объект.Детализация.ЧасыЛекций_I</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterBackColor>web:OrangeRed</FooterBackColor>
+							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<BackColor>web:Orange</BackColor>
+							<ContextMenu name="ДетализацияЧасыЛекций_IКонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="ДетализацияЧасыЛекций_IРасширеннаяПодсказка" id="77"/>
+						</InputField>
+						<InputField name="ДетализацияЧасыПрактики_I" id="78">
+							<DataPath>Объект.Детализация.ЧасыПрактики_I</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterBackColor>web:OrangeRed</FooterBackColor>
+							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<BackColor>web:Orange</BackColor>
+							<ContextMenu name="ДетализацияЧасыПрактики_IКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="ДетализацияЧасыПрактики_IРасширеннаяПодсказка" id="80"/>
+						</InputField>
+						<ColumnGroup name="ДетализацияГруппа1" id="131">
+							<ExtendedTooltip name="ДетализацияГруппа1РасширеннаяПодсказка" id="132"/>
+							<ChildItems>
+								<InputField name="ДетализацияЧасыАттестации_I" id="81">
+									<DataPath>Объект.Детализация.ЧасыАттестации_I</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>web:OrangeRed</FooterBackColor>
+									<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<BackColor>web:Orange</BackColor>
+									<ContextMenu name="ДетализацияЧасыАттестации_IКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="ДетализацияЧасыАттестации_IРасширеннаяПодсказка" id="83"/>
+								</InputField>
+								<InputField name="ДетализацияВидАттестации_I" id="84">
+									<DataPath>Объект.Детализация.ВидАттестации_I</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>web:OrangeRed</FooterBackColor>
+									<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<BackColor>web:Orange</BackColor>
+									<ContextMenu name="ДетализацияВидАттестации_IКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ДетализацияВидАттестации_IРасширеннаяПодсказка" id="86"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="ДетализацияЧислоНедель_II" id="87">
+							<DataPath>Объект.Детализация.ЧислоНедель_II</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterBackColor>web:DarkTurquoise</FooterBackColor>
+							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<BackColor>web:Aquamarine</BackColor>
+							<ContextMenu name="ДетализацияЧислоНедель_IIКонтекстноеМеню" id="88"/>
+							<ExtendedTooltip name="ДетализацияЧислоНедель_IIРасширеннаяПодсказка" id="89"/>
+						</InputField>
+						<InputField name="ДетализацияВсегоЧасов_II" id="90">
+							<DataPath>Объект.Детализация.ВсегоЧасов_II</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterBackColor>web:DarkTurquoise</FooterBackColor>
+							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<BackColor>web:Aquamarine</BackColor>
+							<ContextMenu name="ДетализацияВсегоЧасов_IIКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="ДетализацияВсегоЧасов_IIРасширеннаяПодсказка" id="92"/>
+						</InputField>
+						<InputField name="ДетализацияЧасыЛекций_II" id="93">
+							<DataPath>Объект.Детализация.ЧасыЛекций_II</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterBackColor>web:DarkTurquoise</FooterBackColor>
+							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<BackColor>web:Aquamarine</BackColor>
+							<ContextMenu name="ДетализацияЧасыЛекций_IIКонтекстноеМеню" id="94"/>
+							<ExtendedTooltip name="ДетализацияЧасыЛекций_IIРасширеннаяПодсказка" id="95"/>
+						</InputField>
+						<InputField name="ДетализацияЧасыПрактики_II" id="96">
+							<DataPath>Объект.Детализация.ЧасыПрактики_II</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterBackColor>web:DarkTurquoise</FooterBackColor>
+							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<BackColor>web:Aquamarine</BackColor>
+							<ContextMenu name="ДетализацияЧасыПрактики_IIКонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="ДетализацияЧасыПрактики_IIРасширеннаяПодсказка" id="98"/>
+						</InputField>
+						<InputField name="ДетализацияЧасыКонсультаций_II" id="99">
+							<DataPath>Объект.Детализация.ЧасыКонсультаций_II</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterBackColor>web:DarkTurquoise</FooterBackColor>
+							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<BackColor>web:Aquamarine</BackColor>
+							<ContextMenu name="ДетализацияЧасыКонсультаций_IIКонтекстноеМеню" id="100"/>
+							<ExtendedTooltip name="ДетализацияЧасыКонсультаций_IIРасширеннаяПодсказка" id="101"/>
+						</InputField>
+						<ColumnGroup name="ДетализацияГруппа2" id="133">
+							<ExtendedTooltip name="ДетализацияГруппа2РасширеннаяПодсказка" id="134"/>
+							<ChildItems>
+								<InputField name="ДетализацияЧасыАттестации_II" id="102">
+									<DataPath>Объект.Детализация.ЧасыАттестации_II</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>web:DarkTurquoise</FooterBackColor>
+									<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<BackColor>web:Aquamarine</BackColor>
+									<ContextMenu name="ДетализацияЧасыАттестации_IIКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="ДетализацияЧасыАттестации_IIРасширеннаяПодсказка" id="104"/>
+								</InputField>
+								<InputField name="ДетализацияВидАттестации_II" id="105">
+									<DataPath>Объект.Детализация.ВидАттестации_II</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>web:DarkTurquoise</FooterBackColor>
+									<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<BackColor>web:Aquamarine</BackColor>
+									<ContextMenu name="ДетализацияВидАттестации_IIКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="ДетализацияВидАттестации_IIРасширеннаяПодсказка" id="107"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.НагрузкаГруппы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

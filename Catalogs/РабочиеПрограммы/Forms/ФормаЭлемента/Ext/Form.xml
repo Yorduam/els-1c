@@ -162,6 +162,7 @@
 								<InputField name="ТематическийПланТема" id="44">
 									<DataPath>Объект.ТематическийПлан.Тема</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<MultiLine>true</MultiLine>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ТематическийПланТемаКонтекстноеМеню" id="45"/>
 									<ExtendedTooltip name="ТематическийПланТемаРасширеннаяПодсказка" id="46"/>
@@ -169,6 +170,7 @@
 								<InputField name="ТематическийПланСодержание" id="47">
 									<DataPath>Объект.ТематическийПлан.Содержание</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<MultiLine>true</MultiLine>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ТематическийПланСодержаниеКонтекстноеМеню" id="48"/>
 									<ExtendedTooltip name="ТематическийПланСодержаниеРасширеннаяПодсказка" id="49"/>
@@ -180,9 +182,25 @@
 									<ContextMenu name="ТематическийПланФормаОрганизацииКонтекстноеМеню" id="51"/>
 									<ExtendedTooltip name="ТематическийПланФормаОрганизацииРасширеннаяПодсказка" id="52"/>
 								</InputField>
+								<InputField name="ТематическийПланПромежуточнаяАттестация" id="91">
+									<DataPath>Объект.ТематическийПлан.ПромежуточнаяАттестация</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Доступен, если форма организации - Промежуточная аттестация</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<BackColor>#FF0000</BackColor>
+									<ContextMenu name="ТематическийПланПромежуточнаяАттестацияКонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="ТематическийПланПромежуточнаяАттестацияРасширеннаяПодсказка" id="93"/>
+								</InputField>
 								<InputField name="ТематическийПланДомашнееЗадание" id="53">
 									<DataPath>Объект.ТематическийПлан.ДомашнееЗадание</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<MultiLine>true</MultiLine>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ТематическийПланДомашнееЗаданиеКонтекстноеМеню" id="54"/>
 									<ExtendedTooltip name="ТематическийПланДомашнееЗаданиеРасширеннаяПодсказка" id="55"/>
@@ -190,6 +208,7 @@
 								<InputField name="ТематическийПланЛитература" id="56">
 									<DataPath>Объект.ТематическийПлан.Литература</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<MultiLine>true</MultiLine>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ТематическийПланЛитератураКонтекстноеМеню" id="57"/>
 									<ExtendedTooltip name="ТематическийПланЛитератураРасширеннаяПодсказка" id="58"/>
@@ -263,6 +282,7 @@
 								<InputField name="Компетенции1НаименованиеКомпетенции" id="88">
 									<DataPath>Объект.Компетенции.НаименованиеКомпетенции</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<MultiLine>true</MultiLine>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="Компетенции1НаименованиеКомпетенцииКонтекстноеМеню" id="89"/>
 									<ExtendedTooltip name="Компетенции1НаименованиеКомпетенцииРасширеннаяПодсказка" id="90"/>
@@ -282,5 +302,45 @@
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТематическийПланПромежуточнаяАттестация</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ТематическийПлан.ФормаОрганизации</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ФормаОрганизацииОбучения.ПромежуточнаяАттестация</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#00FF00</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType"/>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 </Form>

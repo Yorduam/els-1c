@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.16">
+	<Item id="ce159bd1-7b33-4df3-bf7d-cce82ecac01a">
+		<Name>I</Name>
+		<Code>01</Code>
+		<Description>I курс</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="2cab4cd0-bdf3-4dcc-822d-296be45c7e95">
+				<Name>Первый</Name>
+				<Code>02</Code>
+				<Description>I</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5b22644a-f879-413b-ab6e-d6948f210e49">
+				<Name>Второй</Name>
+				<Code>03</Code>
+				<Description>II</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="8788c2f4-3b54-450e-99a5-fc3cbb749f5b">
+		<Name>II</Name>
+		<Code>04</Code>
+		<Description>II курс</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="ff58aa66-253d-43e5-8e40-6e7a6b7144f8">
+				<Name>Третий</Name>
+				<Code>05</Code>
+				<Description>III</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="7602c96c-ed7d-4a0d-8310-3f0bb45ebb4e">
+				<Name>Четвертый</Name>
+				<Code>06</Code>
+				<Description>IV</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="171d3057-f1e0-4018-9224-534690b520e1">
+		<Name>III</Name>
+		<Code>07</Code>
+		<Description>III курс</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="82393c8e-161c-4bcb-80d1-d9719e132f39">
+				<Name>Пятый</Name>
+				<Code>08</Code>
+				<Description>V</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="62e9f1ce-0344-46be-b120-bc9f21aba981">
+				<Name>Шестой</Name>
+				<Code>09</Code>
+				<Description>VI</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

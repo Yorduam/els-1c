@@ -49,7 +49,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Илья Минин</Vendor>
-			<Version>0.0.4</Version>
+			<Version>0.1.0</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -235,7 +235,7 @@
 			<ConfigurationInformationAddress/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
-			<ModalityUseMode>DontUse</ModalityUseMode>
+			<ModalityUseMode>Use</ModalityUseMode>
 			<SynchronousPlatformExtensionAndAddInCallUseMode>DontUse</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
 			<DatabaseTablespacesUseMode>DontUse</DatabaseTablespacesUseMode>
@@ -260,6 +260,12 @@
 			<CommonPicture>Папка</CommonPicture>
 			<CommonPicture>ЧеловекЖенщина</CommonPicture>
 			<CommonPicture>ЧеловекМужчина</CommonPicture>
+			<Role>Администратор</Role>
+			<Role>Администрация</Role>
+			<Role>Завуч</Role>
+			<Role>Методист</Role>
+			<Role>Преподаватель</Role>
+			<Role>СтуденческийОтдел</Role>
 			<CommonModule>РаботаДокументов</CommonModule>
 			<CommonModule>РаботаСправочников</CommonModule>
 			<CommonAttribute>НомерТелефона</CommonAttribute>
@@ -276,6 +282,7 @@
 			<Document>ЗачислениеОбучающихся</Document>
 			<Document>ОтчислениеОбучающихся</Document>
 			<Document>ПереводОбучающихся</Document>
+			<Document>НагрузкаГруппы</Document>
 			<DocumentNumerator>ДвижениеКонтингента</DocumentNumerator>
 			<Enum>ДвижениеКонтингента</Enum>
 			<Enum>Пол</Enum>
@@ -288,6 +295,7 @@
 			<InformationRegister>АктуальностьКонтингента</InformationRegister>
 			<AccumulationRegister>ЧисленностьГруппы</AccumulationRegister>
 			<AccumulationRegister>АктивныйКонтингент</AccumulationRegister>
+			<AccumulationRegister>УчебныйПлан</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
