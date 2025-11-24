@@ -37,6 +37,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Кабинеты</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Report.СоставГруппы</name>
 		<right>
 			<name>Use</name>
@@ -49,6 +60,17 @@
 	</object>
 	<object>
 		<name>Subsystem.СекторУспеваемости</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.Расписание</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -134,6 +156,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.Занятия</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Группы</name>
 		<right>
 			<name>Read</name>
@@ -145,7 +178,40 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ПериодыОбучения</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВремяУрока</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Дисциплины</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.НастройкаУрока</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

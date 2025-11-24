@@ -42,15 +42,44 @@
 			<ContextMenu name="ГодНабораКонтекстноеМеню" id="14"/>
 			<ExtendedTooltip name="ГодНабораРасширеннаяПодсказка" id="15"/>
 		</InputField>
-		<InputField name="НаБазе" id="19">
+		<RadioButtonField name="НаБазе" id="19">
 			<DataPath>Объект.НаБазе</DataPath>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<RadioButtonType>Tumbler</RadioButtonType>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>На базе 9 классов</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.ФормаОбразования.EnumValue.ОсновноеОбщее</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>На базе 11 классов</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.ФормаОбразования.EnumValue.СреднееОбщее</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
 			<ContextMenu name="НаБазеКонтекстноеМеню" id="20"/>
 			<ExtendedTooltip name="НаБазеРасширеннаяПодсказка" id="21"/>
-		</InputField>
+		</RadioButtonField>
 		<InputField name="Набор" id="16">
 			<DataPath>Объект.Набор</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<SpinButton>true</SpinButton>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="НаборКонтекстноеМеню" id="17"/>
 			<ExtendedTooltip name="НаборРасширеннаяПодсказка" id="18"/>

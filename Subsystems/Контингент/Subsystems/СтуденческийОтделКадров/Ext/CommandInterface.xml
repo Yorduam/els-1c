@@ -19,7 +19,7 @@
 	</CommandsVisibility>
 	<CommandsPlacement>
 		<Command name="InformationRegister.АктуальностьКонтингента.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
 		<Command name="AccumulationRegister.ЧисленностьГруппы.StandardCommand.OpenList">
@@ -32,6 +32,9 @@
 		</Command>
 	</CommandsPlacement>
 	<CommandsOrder>
+		<Command name="InformationRegister.АктуальностьКонтингента.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
 		<Command name="Document.ЗачислениеОбучающихся.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
@@ -40,9 +43,6 @@
 		</Command>
 		<Command name="Document.ОтчислениеОбучающихся.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
-		</Command>
-		<Command name="InformationRegister.АктуальностьКонтингента.StandardCommand.OpenList">
-			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
 		</Command>
 		<Command name="AccumulationRegister.ЧисленностьГруппы.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>

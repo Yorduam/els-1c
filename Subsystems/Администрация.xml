@@ -18,7 +18,9 @@
 				<xr:Ref>CommonPicture.Директор</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Content/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">ae2ea51a-e8a6-4877-ae39-f94a6bffb89c</xr:Item>
+			</Content>
 		</Properties>
 		<ChildObjects>
 			<Subsystem>Кадры</Subsystem>

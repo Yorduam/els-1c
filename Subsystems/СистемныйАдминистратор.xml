@@ -18,7 +18,9 @@
 				<xr:Ref>CommonPicture.Администратор</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Content/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+			</Content>
 		</Properties>
 		<ChildObjects>
 			<Subsystem>НастройкиОбразования</Subsystem>

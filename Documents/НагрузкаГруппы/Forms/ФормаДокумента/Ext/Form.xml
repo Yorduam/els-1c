@@ -69,9 +69,6 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ГруппаКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="9"/>
-					<Events>
-						<Event name="OnChange">ГруппаПриИзменении</Event>
-					</Events>
 				</InputField>
 				<InputField name="Курс" id="10">
 					<DataPath>Объект.Курс</DataPath>
@@ -97,23 +94,9 @@
 				</InputField>
 				<InputField name="УчебныйГод" id="13">
 					<DataPath>Объект.УчебныйГод</DataPath>
-					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<Width>1</Width>
-					<DropListButton>false</DropListButton>
-					<ChoiceButton>false</ChoiceButton>
-					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
-					<ClearButton>false</ClearButton>
-					<SpinButton>false</SpinButton>
-					<OpenButton>false</OpenButton>
-					<CreateButton>false</CreateButton>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<InputHint>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Выберите группу</v8:content>
-						</v8:item>
-					</InputHint>
 					<ContextMenu name="УчебныйГодКонтекстноеМеню" id="14"/>
 					<ExtendedTooltip name="УчебныйГодРасширеннаяПодсказка" id="15"/>
 				</InputField>
@@ -334,66 +317,240 @@
 							<ContextMenu name="ДетализацияНомерСтрокиКонтекстноеМеню" id="64"/>
 							<ExtendedTooltip name="ДетализацияНомерСтрокиРасширеннаяПодсказка" id="65"/>
 						</LabelField>
-						<InputField name="ДетализацияЧислоНедель_I" id="66">
-							<DataPath>Объект.Детализация.ЧислоНедель_I</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<FooterBackColor>web:OrangeRed</FooterBackColor>
-							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<BackColor>web:Orange</BackColor>
-							<ContextMenu name="ДетализацияЧислоНедель_IКонтекстноеМеню" id="67"/>
-							<ExtendedTooltip name="ДетализацияЧислоНедель_IРасширеннаяПодсказка" id="68"/>
-						</InputField>
-						<InputField name="ДетализацияВсегоЧасов_I" id="69">
-							<DataPath>Объект.Детализация.ВсегоЧасов_I</DataPath>
+						<ColumnGroup name="ГруппаСеместр" id="145">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа семестр</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа семестр</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаСеместрРасширеннаяПодсказка" id="146"/>
+							<ChildItems>
+								<InputField name="ДетализацияСеместр_I" id="147">
+									<DataPath>Объект.Детализация.Семестр_I</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДетализацияСеместр_IКонтекстноеМеню" id="148"/>
+									<ExtendedTooltip name="ДетализацияСеместр_IРасширеннаяПодсказка" id="149"/>
+								</InputField>
+								<InputField name="ДетализацияСеместр_II" id="150">
+									<DataPath>Объект.Детализация.Семестр_II</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДетализацияСеместр_IIКонтекстноеМеню" id="151"/>
+									<ExtendedTooltip name="ДетализацияСеместр_IIРасширеннаяПодсказка" id="152"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ГруппаНедель" id="135">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа недель</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа недель</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаНедельРасширеннаяПодсказка" id="136"/>
+							<ChildItems>
+								<InputField name="ДетализацияЧислоНедель_I" id="66">
+									<DataPath>Объект.Детализация.ЧислоНедель_I</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<BackColor>web:Orange</BackColor>
+									<ContextMenu name="ДетализацияЧислоНедель_IКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ДетализацияЧислоНедель_IРасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<InputField name="ДетализацияЧислоНедель_II" id="87">
+									<DataPath>Объект.Детализация.ЧислоНедель_II</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<BackColor>web:Aquamarine</BackColor>
+									<ContextMenu name="ДетализацияЧислоНедель_IIКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="ДетализацияЧислоНедель_IIРасширеннаяПодсказка" id="89"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ГруппаВсегоЧасов" id="137">
 							<ReadOnly>true</ReadOnly>
-							<EditMode>EnterOnInput</EditMode>
-							<FooterBackColor>web:OrangeRed</FooterBackColor>
-							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<BackColor>web:Orange</BackColor>
-							<ContextMenu name="ДетализацияВсегоЧасов_IКонтекстноеМеню" id="70"/>
-							<ExtendedTooltip name="ДетализацияВсегоЧасов_IРасширеннаяПодсказка" id="71"/>
-						</InputField>
-						<InputField name="ДетализацияЧасыКонсультаций_I" id="72">
-							<DataPath>Объект.Детализация.ЧасыКонсультаций_I</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа всего часов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа всего часов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаВсегоЧасовРасширеннаяПодсказка" id="138"/>
+							<ChildItems>
+								<InputField name="ДетализацияВсегоЧасов_I" id="69">
+									<DataPath>Объект.Детализация.ВсегоЧасов_I</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>web:OrangeRed</FooterBackColor>
+									<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<BackColor>web:Orange</BackColor>
+									<ContextMenu name="ДетализацияВсегоЧасов_IКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ДетализацияВсегоЧасов_IРасширеннаяПодсказка" id="71"/>
+								</InputField>
+								<InputField name="ДетализацияВсегоЧасов_II" id="90">
+									<DataPath>Объект.Детализация.ВсегоЧасов_II</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>web:DarkTurquoise</FooterBackColor>
+									<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<BackColor>web:Aquamarine</BackColor>
+									<ContextMenu name="ДетализацияВсегоЧасов_IIКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="ДетализацияВсегоЧасов_IIРасширеннаяПодсказка" id="92"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ГруппаЧасыКонсультации" id="139">
 							<ReadOnly>true</ReadOnly>
-							<EditMode>EnterOnInput</EditMode>
-							<FooterBackColor>web:OrangeRed</FooterBackColor>
-							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<BackColor>web:Orange</BackColor>
-							<ContextMenu name="ДетализацияЧасыКонсультаций_IКонтекстноеМеню" id="73"/>
-							<ExtendedTooltip name="ДетализацияЧасыКонсультаций_IРасширеннаяПодсказка" id="74"/>
-						</InputField>
-						<InputField name="ДетализацияЧасыЛекций_I" id="75">
-							<DataPath>Объект.Детализация.ЧасыЛекций_I</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа часы консультации</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа часы консультации</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаЧасыКонсультацииРасширеннаяПодсказка" id="140"/>
+							<ChildItems>
+								<InputField name="ДетализацияЧасыКонсультаций_I" id="72">
+									<DataPath>Объект.Детализация.ЧасыКонсультаций_I</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>web:OrangeRed</FooterBackColor>
+									<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<BackColor>web:Orange</BackColor>
+									<ContextMenu name="ДетализацияЧасыКонсультаций_IКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ДетализацияЧасыКонсультаций_IРасширеннаяПодсказка" id="74"/>
+								</InputField>
+								<InputField name="ДетализацияЧасыКонсультаций_II" id="99">
+									<DataPath>Объект.Детализация.ЧасыКонсультаций_II</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>web:DarkTurquoise</FooterBackColor>
+									<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<BackColor>web:Aquamarine</BackColor>
+									<ContextMenu name="ДетализацияЧасыКонсультаций_IIКонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="ДетализацияЧасыКонсультаций_IIРасширеннаяПодсказка" id="101"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ГруппаЧасыЛекций" id="141">
 							<ReadOnly>true</ReadOnly>
-							<EditMode>EnterOnInput</EditMode>
-							<FooterBackColor>web:OrangeRed</FooterBackColor>
-							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<BackColor>web:Orange</BackColor>
-							<ContextMenu name="ДетализацияЧасыЛекций_IКонтекстноеМеню" id="76"/>
-							<ExtendedTooltip name="ДетализацияЧасыЛекций_IРасширеннаяПодсказка" id="77"/>
-						</InputField>
-						<InputField name="ДетализацияЧасыПрактики_I" id="78">
-							<DataPath>Объект.Детализация.ЧасыПрактики_I</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа часы лекций</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа часы лекций</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаЧасыЛекцийРасширеннаяПодсказка" id="142"/>
+							<ChildItems>
+								<InputField name="ДетализацияЧасыЛекций_I" id="75">
+									<DataPath>Объект.Детализация.ЧасыЛекций_I</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>web:OrangeRed</FooterBackColor>
+									<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<BackColor>web:Orange</BackColor>
+									<ContextMenu name="ДетализацияЧасыЛекций_IКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="ДетализацияЧасыЛекций_IРасширеннаяПодсказка" id="77"/>
+								</InputField>
+								<InputField name="ДетализацияЧасыЛекций_II" id="93">
+									<DataPath>Объект.Детализация.ЧасыЛекций_II</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>web:DarkTurquoise</FooterBackColor>
+									<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<BackColor>web:Aquamarine</BackColor>
+									<ContextMenu name="ДетализацияЧасыЛекций_IIКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ДетализацияЧасыЛекций_IIРасширеннаяПодсказка" id="95"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ГруппаЧасыПрактики" id="143">
 							<ReadOnly>true</ReadOnly>
-							<EditMode>EnterOnInput</EditMode>
-							<FooterBackColor>web:OrangeRed</FooterBackColor>
-							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<BackColor>web:Orange</BackColor>
-							<ContextMenu name="ДетализацияЧасыПрактики_IКонтекстноеМеню" id="79"/>
-							<ExtendedTooltip name="ДетализацияЧасыПрактики_IРасширеннаяПодсказка" id="80"/>
-						</InputField>
-						<ColumnGroup name="ДетализацияГруппа1" id="131">
-							<ExtendedTooltip name="ДетализацияГруппа1РасширеннаяПодсказка" id="132"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа часы практики</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа часы практики</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаЧасыПрактикиРасширеннаяПодсказка" id="144"/>
+							<ChildItems>
+								<InputField name="ДетализацияЧасыПрактики_I" id="78">
+									<DataPath>Объект.Детализация.ЧасыПрактики_I</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>web:OrangeRed</FooterBackColor>
+									<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<BackColor>web:Orange</BackColor>
+									<ContextMenu name="ДетализацияЧасыПрактики_IКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="ДетализацияЧасыПрактики_IРасширеннаяПодсказка" id="80"/>
+								</InputField>
+								<InputField name="ДетализацияЧасыПрактики_II" id="96">
+									<DataPath>Объект.Детализация.ЧасыПрактики_II</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterBackColor>web:DarkTurquoise</FooterBackColor>
+									<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<BackColor>web:Aquamarine</BackColor>
+									<ContextMenu name="ДетализацияЧасыПрактики_IIКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ДетализацияЧасыПрактики_IIРасширеннаяПодсказка" id="98"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ГруппаЧасыАттестации" id="131">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа часы аттестации</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа часы аттестации</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаЧасыАттестацииРасширеннаяПодсказка" id="132"/>
 							<ChildItems>
 								<InputField name="ДетализацияЧасыАттестации_I" id="81">
 									<DataPath>Объект.Детализация.ЧасыАттестации_I</DataPath>
-									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<FooterBackColor>web:OrangeRed</FooterBackColor>
 									<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
@@ -402,79 +559,8 @@
 									<ContextMenu name="ДетализацияЧасыАттестации_IКонтекстноеМеню" id="82"/>
 									<ExtendedTooltip name="ДетализацияЧасыАттестации_IРасширеннаяПодсказка" id="83"/>
 								</InputField>
-								<InputField name="ДетализацияВидАттестации_I" id="84">
-									<DataPath>Объект.Детализация.ВидАттестации_I</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<EditMode>EnterOnInput</EditMode>
-									<FooterBackColor>web:OrangeRed</FooterBackColor>
-									<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<BackColor>web:Orange</BackColor>
-									<ContextMenu name="ДетализацияВидАттестации_IКонтекстноеМеню" id="85"/>
-									<ExtendedTooltip name="ДетализацияВидАттестации_IРасширеннаяПодсказка" id="86"/>
-								</InputField>
-							</ChildItems>
-						</ColumnGroup>
-						<InputField name="ДетализацияЧислоНедель_II" id="87">
-							<DataPath>Объект.Детализация.ЧислоНедель_II</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<FooterBackColor>web:DarkTurquoise</FooterBackColor>
-							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<BackColor>web:Aquamarine</BackColor>
-							<ContextMenu name="ДетализацияЧислоНедель_IIКонтекстноеМеню" id="88"/>
-							<ExtendedTooltip name="ДетализацияЧислоНедель_IIРасширеннаяПодсказка" id="89"/>
-						</InputField>
-						<InputField name="ДетализацияВсегоЧасов_II" id="90">
-							<DataPath>Объект.Детализация.ВсегоЧасов_II</DataPath>
-							<ReadOnly>true</ReadOnly>
-							<EditMode>EnterOnInput</EditMode>
-							<FooterBackColor>web:DarkTurquoise</FooterBackColor>
-							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<BackColor>web:Aquamarine</BackColor>
-							<ContextMenu name="ДетализацияВсегоЧасов_IIКонтекстноеМеню" id="91"/>
-							<ExtendedTooltip name="ДетализацияВсегоЧасов_IIРасширеннаяПодсказка" id="92"/>
-						</InputField>
-						<InputField name="ДетализацияЧасыЛекций_II" id="93">
-							<DataPath>Объект.Детализация.ЧасыЛекций_II</DataPath>
-							<ReadOnly>true</ReadOnly>
-							<EditMode>EnterOnInput</EditMode>
-							<FooterBackColor>web:DarkTurquoise</FooterBackColor>
-							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<BackColor>web:Aquamarine</BackColor>
-							<ContextMenu name="ДетализацияЧасыЛекций_IIКонтекстноеМеню" id="94"/>
-							<ExtendedTooltip name="ДетализацияЧасыЛекций_IIРасширеннаяПодсказка" id="95"/>
-						</InputField>
-						<InputField name="ДетализацияЧасыПрактики_II" id="96">
-							<DataPath>Объект.Детализация.ЧасыПрактики_II</DataPath>
-							<ReadOnly>true</ReadOnly>
-							<EditMode>EnterOnInput</EditMode>
-							<FooterBackColor>web:DarkTurquoise</FooterBackColor>
-							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<BackColor>web:Aquamarine</BackColor>
-							<ContextMenu name="ДетализацияЧасыПрактики_IIКонтекстноеМеню" id="97"/>
-							<ExtendedTooltip name="ДетализацияЧасыПрактики_IIРасширеннаяПодсказка" id="98"/>
-						</InputField>
-						<InputField name="ДетализацияЧасыКонсультаций_II" id="99">
-							<DataPath>Объект.Детализация.ЧасыКонсультаций_II</DataPath>
-							<ReadOnly>true</ReadOnly>
-							<EditMode>EnterOnInput</EditMode>
-							<FooterBackColor>web:DarkTurquoise</FooterBackColor>
-							<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<BackColor>web:Aquamarine</BackColor>
-							<ContextMenu name="ДетализацияЧасыКонсультаций_IIКонтекстноеМеню" id="100"/>
-							<ExtendedTooltip name="ДетализацияЧасыКонсультаций_IIРасширеннаяПодсказка" id="101"/>
-						</InputField>
-						<ColumnGroup name="ДетализацияГруппа2" id="133">
-							<ExtendedTooltip name="ДетализацияГруппа2РасширеннаяПодсказка" id="134"/>
-							<ChildItems>
 								<InputField name="ДетализацияЧасыАттестации_II" id="102">
 									<DataPath>Объект.Детализация.ЧасыАттестации_II</DataPath>
-									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<FooterBackColor>web:DarkTurquoise</FooterBackColor>
 									<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
@@ -483,12 +569,35 @@
 									<ContextMenu name="ДетализацияЧасыАттестации_IIКонтекстноеМеню" id="103"/>
 									<ExtendedTooltip name="ДетализацияЧасыАттестации_IIРасширеннаяПодсказка" id="104"/>
 								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ГруппаВидАттестации" id="133">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вид аттестации</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вид аттестации</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаВидАттестацииРасширеннаяПодсказка" id="134"/>
+							<ChildItems>
+								<InputField name="ДетализацияВидАттестации_I" id="84">
+									<DataPath>Объект.Детализация.ВидАттестации_I</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<BackColor>web:Orange</BackColor>
+									<ContextMenu name="ДетализацияВидАттестации_IКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ДетализацияВидАттестации_IРасширеннаяПодсказка" id="86"/>
+								</InputField>
 								<InputField name="ДетализацияВидАттестации_II" id="105">
 									<DataPath>Объект.Детализация.ВидАттестации_II</DataPath>
-									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
-									<FooterBackColor>web:DarkTurquoise</FooterBackColor>
-									<FooterFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<BackColor>web:Aquamarine</BackColor>
 									<ContextMenu name="ДетализацияВидАттестации_IIКонтекстноеМеню" id="106"/>

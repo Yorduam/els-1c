@@ -87,8 +87,26 @@
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<BackColor>style:AuxiliaryNavigationColor</BackColor>
 							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Иванов Иван Иванович</v8:content>
+								</v8:item>
+							</InputHint>
 							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="Инициалы" id="36">
+							<DataPath>Объект.Инициалы</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Иванов И.И.</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="ИнициалыКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ИнициалыРасширеннаяПодсказка" id="38"/>
 						</InputField>
 						<InputField name="ДатаРождения" id="7">
 							<DataPath>Объект.ДатаРождения</DataPath>
@@ -97,13 +115,31 @@
 							<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="8"/>
 							<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="9"/>
 						</InputField>
-						<InputField name="Пол" id="10">
+						<RadioButtonField name="Пол" id="10">
 							<DataPath>Объект.Пол</DataPath>
 							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<RadioButtonType>Tumbler</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.Пол.EnumValue.Мужчина</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.Пол.EnumValue.Женщина</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
 							<ContextMenu name="ПолКонтекстноеМеню" id="11"/>
 							<ExtendedTooltip name="ПолРасширеннаяПодсказка" id="12"/>
-						</InputField>
+						</RadioButtonField>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="Контакты" id="32">
@@ -126,6 +162,12 @@
 							<DataPath>Объект.НомерТелефона</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>+7(999) 999-99-99</v8:content>
+								</v8:item>
+							</InputHint>
 							<ContextMenu name="НомерТелефонаКонтекстноеМеню" id="20"/>
 							<ExtendedTooltip name="НомерТелефонаРасширеннаяПодсказка" id="21"/>
 						</InputField>
@@ -133,6 +175,12 @@
 							<DataPath>Объект.ЭлектроннаяПочта</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>sample@mail.ru</v8:content>
+								</v8:item>
+							</InputHint>
 							<ContextMenu name="ЭлектроннаяПочтаКонтекстноеМеню" id="23"/>
 							<ExtendedTooltip name="ЭлектроннаяПочтаРасширеннаяПодсказка" id="24"/>
 						</InputField>
@@ -140,6 +188,12 @@
 							<DataPath>Объект.СНИЛС</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>123-456-789 00</v8:content>
+								</v8:item>
+							</InputHint>
 							<ContextMenu name="СНИЛСКонтекстноеМеню" id="17"/>
 							<ExtendedTooltip name="СНИЛСРасширеннаяПодсказка" id="18"/>
 						</InputField>

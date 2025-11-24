@@ -23,7 +23,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Группы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.НагрузкаГруппы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.УчебныйПлан</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">220e359b-3127-4636-a0fd-322dc5ef47f6</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВремяУрока</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Расписание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Занятия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">3b6bb030-f8b3-4453-82e0-a533ba11af2a</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

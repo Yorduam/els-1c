@@ -24,7 +24,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.АктивныйКонтингент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.СоставГруппы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ВыводКонтингента</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">15898c4f-8829-491e-81c1-b9471c55a6f7</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

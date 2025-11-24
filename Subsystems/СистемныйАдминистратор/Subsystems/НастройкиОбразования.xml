@@ -17,7 +17,8 @@
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкаКурса</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">c4ff9d40-0c25-44f0-9b73-964868e34730</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкаУрока</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВремяУрока</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

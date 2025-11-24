@@ -18,7 +18,8 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Специальности</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.УчебныеГода</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">220e359b-3127-4636-a0fd-322dc5ef47f6</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВремяУрока</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПериодыОбучения</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -278,13 +278,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.УчебныеГода.Attribute.ДатаНачала</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Subsystem.УчебнаяЧасть</name>
 		<right>
 			<name>View</name>
@@ -343,13 +336,6 @@
 		<right>
 			<name>ViewDataHistory</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.УчебныеГода.Attribute.ДатаОкончания</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>

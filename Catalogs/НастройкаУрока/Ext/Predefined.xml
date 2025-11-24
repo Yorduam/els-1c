@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.16">
+	<Item id="54565dd9-48e0-4c36-ac15-5932b81125f1">
+		<Name>Урок1</Name>
+		<Code xsi:type="xs:decimal">1</Code>
+		<Description>1 урок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="09c6e8cf-5e58-4e88-b5a1-3b715469eab3">
+		<Name>Урок2</Name>
+		<Code xsi:type="xs:decimal">2</Code>
+		<Description>2 урок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0959fee1-b46d-4e36-a8a1-05570bc80343">
+		<Name>Урок3</Name>
+		<Code xsi:type="xs:decimal">3</Code>
+		<Description>3 урок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a28242f0-099e-4e04-8a96-a5c687f1d148">
+		<Name>Урок4</Name>
+		<Code xsi:type="xs:decimal">4</Code>
+		<Description>4 урок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0a2b77f8-92db-49ce-939d-75f2ca1079c4">
+		<Name>Урок5</Name>
+		<Code xsi:type="xs:decimal">5</Code>
+		<Description>5 урок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2a99769d-65f9-491c-83cc-21a88593e86f">
+		<Name>Урок6</Name>
+		<Code xsi:type="xs:decimal">6</Code>
+		<Description>6 урок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c536937e-a0b1-45d1-ab15-09843bcdc946">
+		<Name>Урок7</Name>
+		<Code xsi:type="xs:decimal">7</Code>
+		<Description>7 урок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4c0068f6-9d3c-4af6-ad66-7450724d0a40">
+		<Name>Урок8</Name>
+		<Code xsi:type="xs:decimal">8</Code>
+		<Description>8 урок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

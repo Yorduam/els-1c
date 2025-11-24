@@ -49,7 +49,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Илья Минин</Vendor>
-			<Version>0.1.0</Version>
+			<Version>0.2.0</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -272,27 +272,37 @@
 			<CommonAttribute>ЭлектроннаяПочта</CommonAttribute>
 			<Catalog>Группы</Catalog>
 			<Catalog>Дисциплины</Catalog>
+			<Catalog>Кабинеты</Catalog>
 			<Catalog>Кадры</Catalog>
 			<Catalog>Контингент</Catalog>
+			<Catalog>ПериодыОбучения</Catalog>
 			<Catalog>РабочиеПрограммы</Catalog>
 			<Catalog>Родители</Catalog>
 			<Catalog>Специальности</Catalog>
 			<Catalog>УчебныеГода</Catalog>
 			<Catalog>НастройкаКурса</Catalog>
+			<Catalog>НастройкаУрока</Catalog>
+			<Catalog>Пользователи</Catalog>
 			<Document>ЗачислениеОбучающихся</Document>
 			<Document>ОтчислениеОбучающихся</Document>
 			<Document>ПереводОбучающихся</Document>
 			<Document>НагрузкаГруппы</Document>
+			<Document>Занятия</Document>
 			<DocumentNumerator>ДвижениеКонтингента</DocumentNumerator>
+			<Enum>ВидыДней</Enum>
 			<Enum>ДвижениеКонтингента</Enum>
 			<Enum>Пол</Enum>
 			<Enum>ПромежуточнаяАттестация</Enum>
+			<Enum>ТипПомещения</Enum>
 			<Enum>ФормаОбразования</Enum>
 			<Enum>ФормаОрганизацииОбучения</Enum>
+			<Enum>Роли</Enum>
 			<Report>СоставГруппы</Report>
 			<Report>ВыводРабочихПрограмм</Report>
 			<Report>ВыводКонтингента</Report>
+			<DataProcessor>Расписание</DataProcessor>
 			<InformationRegister>АктуальностьКонтингента</InformationRegister>
+			<InformationRegister>ВремяУрока</InformationRegister>
 			<AccumulationRegister>ЧисленностьГруппы</AccumulationRegister>
 			<AccumulationRegister>АктивныйКонтингент</AccumulationRegister>
 			<AccumulationRegister>УчебныйПлан</AccumulationRegister>
