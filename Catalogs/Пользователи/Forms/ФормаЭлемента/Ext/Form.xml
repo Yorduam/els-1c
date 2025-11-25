@@ -52,6 +52,8 @@
 			<DataPath>Объект.Description</DataPath>
 			<EditMode>EnterOnInput</EditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<BackColor>style:AuxiliaryNavigationColor</BackColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
 		</InputField>
@@ -72,6 +74,7 @@
 			</ToolTip>
 			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 			<EditMode>EnterOnInput</EditMode>
+			<PasswordMode>true</PasswordMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="ПарольКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="12"/>
@@ -86,6 +89,7 @@
 		<LabelField name="УникальныйИдентификатор" id="16">
 			<DataPath>Объект.УникальныйИдентификатор</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 			<ContextMenu name="УникальныйИдентификаторКонтекстноеМеню" id="17"/>
 			<ExtendedTooltip name="УникальныйИдентификаторРасширеннаяПодсказка" id="18"/>
 		</LabelField>
