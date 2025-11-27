@@ -269,6 +269,7 @@
 			<Role>СтуденческийОтдел</Role>
 			<CommonModule>РаботаДокументов</CommonModule>
 			<CommonModule>РаботаСправочников</CommonModule>
+			<CommonModule>Пользователи</CommonModule>
 			<CommonAttribute>НомерТелефона</CommonAttribute>
 			<CommonAttribute>ЭлектроннаяПочта</CommonAttribute>
 			<Catalog>Группы</Catalog>
@@ -310,7 +311,6 @@
 			<AccumulationRegister>ЧисленностьГруппы</AccumulationRegister>
 			<AccumulationRegister>АктивныйКонтингент</AccumulationRegister>
 			<AccumulationRegister>УчебныйПлан</AccumulationRegister>
-			<Task>ЗадачаИсполнителя</Task>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
