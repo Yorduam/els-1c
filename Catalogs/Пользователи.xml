@@ -40,13 +40,13 @@
 			<UseStandardCommands>true</UseStandardCommands>
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
-			<CodeLength>9</CodeLength>
-			<DescriptionLength>25</DescriptionLength>
+			<CodeLength>0</CodeLength>
+			<DescriptionLength>100</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
 			<CodeSeries>WholeCatalog</CodeSeries>
-			<CheckUnique>true</CheckUnique>
-			<Autonumbering>true</Autonumbering>
+			<CheckUnique>false</CheckUnique>
+			<Autonumbering>false</Autonumbering>
 			<DefaultPresentation>AsDescription</DefaultPresentation>
 			<Characteristics/>
 			<PredefinedDataUpdate>Auto</PredefinedDataUpdate>
@@ -55,14 +55,13 @@
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
 				<xr:Field>Catalog.Пользователи.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog.Пользователи.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>Catalog.Пользователи.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm/>
-			<DefaultListForm/>
+			<DefaultListForm>Catalog.Пользователи.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -89,11 +88,11 @@
 		<ChildObjects>
 			<Attribute uuid="c5cd10d6-7041-46ec-8b70-ea66abf0292b">
 				<Properties>
-					<Name>Логин</Name>
+					<Name>ПолноеИмя</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Логин</v8:content>
+							<v8:content>Полное имя</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -131,62 +130,18 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="4835cea5-23aa-4d46-81da-3a81677524ca">
+			<Attribute uuid="ad573737-fc01-444f-908d-c123f5dc46bb">
 				<Properties>
-					<Name>Пароль</Name>
+					<Name>ПоказыватьВСпискеВыбора</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Пароль</v8:content>
+							<v8:content>Показывать в списке выбора</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>50</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:string"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="14510f9e-3dcd-4127-b988-8aec39522ae0">
-				<Properties>
-					<Name>Роль</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Роль</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:EnumRef.Роли</v8:Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -217,11 +172,11 @@
 			</Attribute>
 			<Attribute uuid="3dd6a784-f67c-4ed0-b219-aa737a723e02">
 				<Properties>
-					<Name>УникальныйИдентификатор</Name>
+					<Name>ИдентификаторПользователяИБ</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Уникальный идентификатор</v8:content>
+							<v8:content>Идентификатор пользователя ИБ</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -256,6 +211,7 @@
 				</Properties>
 			</Attribute>
 			<Form>ФормаЭлемента</Form>
+			<Form>ФормаСписка</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

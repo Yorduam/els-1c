@@ -49,7 +49,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Илья Минин</Vendor>
-			<Version>0.2.0</Version>
+			<Version>0.2.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -260,6 +260,7 @@
 			<CommonPicture>Папка</CommonPicture>
 			<CommonPicture>ЧеловекЖенщина</CommonPicture>
 			<CommonPicture>ЧеловекМужчина</CommonPicture>
+			<SessionParameter>ТекущийПользователь</SessionParameter>
 			<Role>Администратор</Role>
 			<Role>Администрация</Role>
 			<Role>Завуч</Role>
@@ -268,10 +269,12 @@
 			<Role>СтуденческийОтдел</Role>
 			<CommonModule>РаботаДокументов</CommonModule>
 			<CommonModule>РаботаСправочников</CommonModule>
+			<CommonModule>Пользователи</CommonModule>
 			<CommonAttribute>НомерТелефона</CommonAttribute>
 			<CommonAttribute>ЭлектроннаяПочта</CommonAttribute>
 			<Catalog>Группы</Catalog>
 			<Catalog>Дисциплины</Catalog>
+			<Catalog>Должности</Catalog>
 			<Catalog>Кабинеты</Catalog>
 			<Catalog>Кадры</Catalog>
 			<Catalog>Контингент</Catalog>
@@ -303,6 +306,8 @@
 			<DataProcessor>Расписание</DataProcessor>
 			<InformationRegister>АктуальностьКонтингента</InformationRegister>
 			<InformationRegister>ВремяУрока</InformationRegister>
+			<InformationRegister>ПривязкаПользователя</InformationRegister>
+			<InformationRegister>РегистрАдресации</InformationRegister>
 			<AccumulationRegister>ЧисленностьГруппы</AccumulationRegister>
 			<AccumulationRegister>АктивныйКонтингент</AccumulationRegister>
 			<AccumulationRegister>УчебныйПлан</AccumulationRegister>

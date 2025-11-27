@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Task uuid="a5fdc2b0-8df2-448e-9e84-57bae2131f17">
+		<InternalInfo>
+			<xr:GeneratedType name="TaskObject.ЗадачаИсполнителя" category="Object">
+				<xr:TypeId>341ccec9-4f10-41fb-8acb-ed7b210ba4bb</xr:TypeId>
+				<xr:ValueId>c9d6ecb4-5504-41c0-84fd-d27165d2a6b0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="TaskRef.ЗадачаИсполнителя" category="Ref">
+				<xr:TypeId>05d851d0-0d6a-4933-8ca5-f541421ef70a</xr:TypeId>
+				<xr:ValueId>6c98ee9f-ad11-4524-b606-41f4775092cb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="TaskSelection.ЗадачаИсполнителя" category="Selection">
+				<xr:TypeId>73b90a92-96d2-46f1-96a9-ebe1e317daab</xr:TypeId>
+				<xr:ValueId>2f2fe37a-f3fc-43e3-9f66-c78535c6a387</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="TaskList.ЗадачаИсполнителя" category="List">
+				<xr:TypeId>551956ee-63c0-44ae-8b51-471fc8c7de18</xr:TypeId>
+				<xr:ValueId>c60aa24f-8717-421e-aad0-54b5c1b1156b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="TaskManager.ЗадачаИсполнителя" category="Manager">
+				<xr:TypeId>47271a98-3beb-4178-94e7-4a063c49c5ca</xr:TypeId>
+				<xr:ValueId>d111562f-7106-4d8f-bc4f-d354abfd0e51</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЗадачаИсполнителя</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача исполнителя</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<NumberType>String</NumberType>
+			<NumberLength>9</NumberLength>
+			<NumberAllowedLength>Variable</NumberAllowedLength>
+			<CheckUnique>true</CheckUnique>
+			<Autonumbering>true</Autonumbering>
+			<TaskNumberAutoPrefix>DontUse</TaskNumberAutoPrefix>
+			<DescriptionLength>25</DescriptionLength>
+			<Addressing>InformationRegister.РегистрАдресации</Addressing>
+			<MainAddressingAttribute>Task.ЗадачаИсполнителя.AddressingAttribute.Исполнитель</MainAddressingAttribute>
+			<CurrentPerformer>SessionParameter.ТекущийПользователь</CurrentPerformer>
+			<BasedOn/>
+			<Characteristics/>
+			<DefaultPresentation>AsDescription</DefaultPresentation>
+			<EditType>InDialog</EditType>
+			<InputByString>
+				<xr:Field>Task.ЗадачаИсполнителя.StandardAttribute.Description</xr:Field>
+				<xr:Field>Task.ЗадачаИсполнителя.StandardAttribute.Number</xr:Field>
+			</InputByString>
+			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
+			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
+			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
+			<CreateOnInput>DontUse</CreateOnInput>
+			<DefaultObjectForm/>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryObjectForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<DataLockFields/>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>Use</FullTextSearch>
+			<ObjectPresentation/>
+			<ExtendedObjectPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<DataHistory>DontUse</DataHistory>
+			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
+			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
+		</Properties>
+		<ChildObjects>
+			<AddressingAttribute uuid="05330d25-eff5-4140-b169-44e2c838a3f5">
+				<Properties>
+					<Name>Исполнитель</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнитель</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<AddressingDimension>InformationRegister.РегистрАдресации.Dimension.Исполнитель</AddressingDimension>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</AddressingAttribute>
+			<AddressingAttribute uuid="22d36965-3206-412b-9202-0f7f60b8f2ca">
+				<Properties>
+					<Name>Должность</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должность</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Должности</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<AddressingDimension>InformationRegister.РегистрАдресации.Dimension.Должность</AddressingDimension>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</AddressingAttribute>
+		</ChildObjects>
+	</Task>
+</MetaDataObject>

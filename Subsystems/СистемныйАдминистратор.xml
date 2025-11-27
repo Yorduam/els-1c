@@ -19,11 +19,13 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрАдресации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">a5fdc2b0-8df2-448e-9e84-57bae2131f17</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
 			<Subsystem>НастройкиОбразования</Subsystem>
+			<Subsystem>УчетныеЗаписи</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

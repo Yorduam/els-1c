@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.16">
+	<Item id="75c02602-5b2c-40b0-8fa5-d8b415a0651b">
+		<Name>АдминистративныйСотрудник</Name>
+		<Code>000000004</Code>
+		<Description>Административный сотрудник</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="022325e4-2335-440c-9876-633f127711ef">
+		<Name>Директор</Name>
+		<Code>000000001</Code>
+		<Description>Директор</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6d890b6f-2193-4aca-9250-33e3d9b76655">
+		<Name>ЗаведующийУчебнойЧастью</Name>
+		<Code>000000002</Code>
+		<Description>Заведующий учебной частью</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="201c4e74-2b5d-4c7c-9082-92f5f8f1b625">
+		<Name>Методист</Name>
+		<Code>000000003</Code>
+		<Description>Методист</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="936d8beb-6b07-489a-aff5-7452f759d8a7">
+		<Name>Преподаватель</Name>
+		<Code>000000006</Code>
+		<Description>Преподаватель</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="824f2422-c7d5-482d-949e-5294a3ab7f5e">
+		<Name>СотрудникСтуденческогоОтдела</Name>
+		<Code>000000005</Code>
+		<Description>Сотрудник студенческого отдела</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
