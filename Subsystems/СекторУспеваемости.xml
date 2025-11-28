@@ -19,7 +19,10 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Расписание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОценкиСтудентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Отметки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЖурналЗанятия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.тПроведениеЗанятия</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

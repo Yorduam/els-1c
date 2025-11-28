@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаЖурнал" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа журнал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа журнал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЖурналРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПанельУправления" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа панель управления</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа панель управления</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПанельУправленияРасширеннаяПодсказка" id="10"/>
+					<ChildItems>
+						<InputField name="Группа" id="6">
+							<DataPath>Группа</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выберите группу</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="ГруппаКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="8"/>
+							<Events>
+								<Event name="OnChange">ГруппаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Дисциплина" id="44">
+							<DataPath>Дисциплина</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выберите дисциплину</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="ДисциплинаКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="ДисциплинаРасширеннаяПодсказка" id="46"/>
+							<Events>
+								<Event name="OnChange">ДисциплинаПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="ДинамическийСписокЖурнал" id="11">
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>ДинамическийСписокЖурнал</DataPath>
+					<RowPictureDataPath>ДинамическийСписокЖурнал.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+					<ContextMenu name="ДинамическийСписокЖурналКонтекстноеМеню" id="12"/>
+					<AutoCommandBar name="ДинамическийСписокЖурналКоманднаяПанель" id="13"/>
+					<ExtendedTooltip name="ДинамическийСписокЖурналРасширеннаяПодсказка" id="14"/>
+					<SearchStringAddition name="ДинамическийСписокЖурналСтрокаПоиска" id="15">
+						<AdditionSource>
+							<Item>ДинамическийСписокЖурнал</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДинамическийСписокЖурналСтрокаПоискаКонтекстноеМеню" id="16"/>
+						<ExtendedTooltip name="ДинамическийСписокЖурналСтрокаПоискаРасширеннаяПодсказка" id="17"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДинамическийСписокЖурналСостояниеПросмотра" id="18">
+						<AdditionSource>
+							<Item>ДинамическийСписокЖурнал</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДинамическийСписокЖурналСостояниеПросмотраКонтекстноеМеню" id="19"/>
+						<ExtendedTooltip name="ДинамическийСписокЖурналСостояниеПросмотраРасширеннаяПодсказка" id="20"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДинамическийСписокЖурналУправлениеПоиском" id="21">
+						<AdditionSource>
+							<Item>ДинамическийСписокЖурнал</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДинамическийСписокЖурналУправлениеПоискомКонтекстноеМеню" id="22"/>
+						<ExtendedTooltip name="ДинамическийСписокЖурналУправлениеПоискомРасширеннаяПодсказка" id="23"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ЖурналГруппа" id="24">
+							<DataPath>ДинамическийСписокЖурнал.Группа</DataPath>
+							<ContextMenu name="ЖурналГруппаКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="ЖурналГруппаРасширеннаяПодсказка" id="26"/>
+						</LabelField>
+						<LabelField name="ЖурналОбучающийся" id="33">
+							<DataPath>ДинамическийСписокЖурнал.Обучающийся</DataPath>
+							<ContextMenu name="ЖурналОбучающийсяКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ЖурналОбучающийсяРасширеннаяПодсказка" id="35"/>
+						</LabelField>
+						<ColumnGroup name="ДинамическийСписокЖурналГруппа" id="39">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Динамический список журнал группа</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Динамический список журнал группа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ДинамическийСписокЖурналГруппаРасширеннаяПодсказка" id="40"/>
+							<ChildItems>
+								<InputField name="ЖурналМесяц" id="41">
+									<DataPath>ДинамическийСписокЖурнал.Дата</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Месяц</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=ММММ</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="ЖурналМесяцКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ЖурналМесяцРасширеннаяПодсказка" id="43"/>
+								</InputField>
+								<LabelField name="ЖурналДата" id="27">
+									<DataPath>ДинамическийСписокЖурнал.Дата</DataPath>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=dd</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="ЖурналДатаКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="ЖурналДатаРасширеннаяПодсказка" id="29"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+						<LabelField name="ЖурналОтметка" id="36">
+							<DataPath>ДинамическийСписокЖурнал.Отметка</DataPath>
+							<ContextMenu name="ЖурналОтметкаКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ЖурналОтметкаРасширеннаяПодсказка" id="38"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Группа" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Группы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДинамическийСписокЖурнал" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Динамический список журнал</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	АктуальностьКонтингентаСрезПоследних.Группа КАК Группа,
+	ОценкиСтудентов.Дисциплина КАК Дисциплина,
+	ОценкиСтудентов.Дата КАК Дата,
+	ОценкиСтудентов.Обучающийся КАК Обучающийся,
+	ОценкиСтудентов.Отметка КАК Отметка
+ИЗ
+	РегистрСведений.ОценкиСтудентов КАК ОценкиСтудентов
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.АктуальностьКонтингента.СрезПоследних КАК АктуальностьКонтингентаСрезПоследних
+		ПО ОценкиСтудентов.Обучающийся = АктуальностьКонтингентаСрезПоследних.Обучающийся
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РасписаниеНаДату КАК РасписаниеНаДату
+		ПО ОценкиСтудентов.Дата = РасписаниеНаДату.Дата
+ГДЕ
+	АктуальностьКонтингентаСрезПоследних.Группа = &amp;Группа
+	И ОценкиСтудентов.Дисциплина = &amp;Дисциплина</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Обучающийся</dcssch:dataPath>
+					<dcssch:field>Обучающийся</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Группа</dcssch:dataPath>
+					<dcssch:field>Группа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дисциплина</dcssch:dataPath>
+					<dcssch:field>Дисциплина</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Отметка</dcssch:dataPath>
+					<dcssch:field>Отметка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Степень</dcssch:dataPath>
+					<dcssch:field>Степень</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПромежуточнаяАттестация</dcssch:dataPath>
+					<dcssch:field>ПромежуточнаяАттестация</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Группа</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Группы</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Дисциплина</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дисциплина</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Дисциплины</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>InformationRegister.ОценкиСтудентов</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Дисциплина" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дисциплина</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Дисциплины</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

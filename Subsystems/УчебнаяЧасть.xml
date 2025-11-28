@@ -25,8 +25,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.УчебныйПлан</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВремяУрока</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Расписание</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.Занятия</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">3b6bb030-f8b3-4453-82e0-a533ba11af2a</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СоставлениеРасписания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РасписаниеНаДату</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
