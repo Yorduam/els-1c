@@ -149,8 +149,8 @@
 		<Metadata name="Catalog.УчебныеГода.Form.ФормаЭлемента.Form" id="97c9da44-7b26-454c-96a8-804f7e14504a.0" configVersion="9c7d04d0f3514044879ced92b774a9cb00000000"/>
 		<Metadata name="CommonAttribute.НомерТелефона" id="e2523553-fce2-4f5a-80ad-ad27d92223fa" configVersion="e9fc752eb64e424f8fccfd6ed759682700000000"/>
 		<Metadata name="CommonAttribute.ЭлектроннаяПочта" id="e8b5c032-e50e-436e-a56a-b650e36f1745" configVersion="9b2f7d45583e6b489b2d267e7490e53d00000000"/>
-		<Metadata name="CommonModule.Пользователи" id="eeb005b4-36ea-4167-8b13-c3ec156c54ca" configVersion="c6bb09d755e2f344b77fbc4125ce96cb00000000"/>
-		<Metadata name="CommonModule.Пользователи.Module" id="eeb005b4-36ea-4167-8b13-c3ec156c54ca.0" configVersion="8e5c428141567f429381e7aa057b722400000000"/>
+		<Metadata name="CommonModule.Пользователи" id="eeb005b4-36ea-4167-8b13-c3ec156c54ca" configVersion="1b9de38c8d1e324591b11e3ed9d3712900000000"/>
+		<Metadata name="CommonModule.Пользователи.Module" id="eeb005b4-36ea-4167-8b13-c3ec156c54ca.0" configVersion="a44e99906f1b28469e1fdab0aa5306a600000000"/>
 		<Metadata name="CommonModule.РаботаДокументов" id="215c3600-b47c-4d3e-aa7f-a51d2c92407d" configVersion="79356b86c086fe458baff9da56a2840c00000000"/>
 		<Metadata name="CommonModule.РаботаДокументов.Module" id="215c3600-b47c-4d3e-aa7f-a51d2c92407d.0" configVersion="8a76ba8faa9d4942bc8aa1db48aabced00000000"/>
 		<Metadata name="CommonModule.РаботаСправочников" id="2589504f-d315-4ea3-a315-f56cbefc4d27" configVersion="aeb84d24ad5a5f4fa2e432fea564303e00000000"/>
@@ -259,7 +259,7 @@
 		<Metadata name="Document.ПереводОбучающихся.Form.ФормаДокумента" id="b2edf2ca-0d48-4acc-974f-37ce5e8332ff" configVersion="a0db146fde6ee84cb4218e1683ac058200000000"/>
 		<Metadata name="Document.ПереводОбучающихся.Form.ФормаДокумента.Form" id="b2edf2ca-0d48-4acc-974f-37ce5e8332ff.0" configVersion="ab9b6d032eaa774d95d8e4699a1ca7de00000000"/>
 		<Metadata name="Document.ПереводОбучающихся.ObjectModule" id="ebf2e324-6814-45a2-9936-0f0404bb93ee.0" configVersion="1033737a3e6c7b46abfc7bde3b951ecd00000000"/>
-		<Metadata name="Document.ПроведениеЗанятия" id="47d46714-355b-4031-b2a1-a260901a0f99" configVersion="26547280c8589b4e8b9257306372aefd00000000">
+		<Metadata name="Document.ПроведениеЗанятия" id="47d46714-355b-4031-b2a1-a260901a0f99" configVersion="26697a3f0c6c9c43a61a9219c8186e4c00000000">
 			<Metadata name="Document.ПроведениеЗанятия.Attribute.Группа" id="0e0f860e-e246-4ee6-a677-fc41ddca8cbf"/>
 			<Metadata name="Document.ПроведениеЗанятия.Attribute.Кабинет" id="0eec2363-af74-41b4-9a65-8081150566a3"/>
 			<Metadata name="Document.ПроведениеЗанятия.Attribute.Дисциплина" id="16a2ef6f-77ed-4b98-8cbf-e38df13b6d58"/>
@@ -279,7 +279,7 @@
 		</Metadata>
 		<Metadata name="Document.ПроведениеЗанятия.Form.ФормаДокумента" id="b144db16-466d-4d6f-8fdc-fce8071b4c1b" configVersion="c10cad775e57b649ab4a9bb23fcc879c00000000"/>
 		<Metadata name="Document.ПроведениеЗанятия.Form.ФормаДокумента.Form" id="b144db16-466d-4d6f-8fdc-fce8071b4c1b.0" configVersion="c03858fe88c14c438f448530ce36b01c00000000"/>
-		<Metadata name="Document.СоставлениеРасписания" id="72802af8-a7a2-4de1-888e-6fe1edc4c9ec" configVersion="e8d4f4d1d5f29a42b99db9a2ff6c19a500000000">
+		<Metadata name="Document.СоставлениеРасписания" id="72802af8-a7a2-4de1-888e-6fe1edc4c9ec" configVersion="522f77601a091d4f98b2add79496e73c00000000">
 			<Metadata name="Document.СоставлениеРасписания.TabularSection.Расписание.Attribute.Преподаватель" id="2d790249-9d44-472a-99dd-4cf5dad5dee3"/>
 			<Metadata name="Document.СоставлениеРасписания.TabularSection.Расписание" id="41269427-0c69-4087-b1f3-eec859a179c1"/>
 			<Metadata name="Document.СоставлениеРасписания.TabularSection.Расписание.Attribute.Занятие" id="5cc92563-85b2-4582-842b-42d3934c64af"/>
@@ -293,7 +293,7 @@
 		</Metadata>
 		<Metadata name="Document.СоставлениеРасписания.Form.ФормаДокумента" id="bb782ae6-13bd-40df-992c-7fa931fd2c10" configVersion="9de71945615a024ca556e217af867edf00000000"/>
 		<Metadata name="Document.СоставлениеРасписания.Form.ФормаДокумента.Form" id="bb782ae6-13bd-40df-992c-7fa931fd2c10.0" configVersion="b34f96983b612440ba878f0ca8b72b3b00000000"/>
-		<Metadata name="Document.СоставлениеРасписания.ObjectModule" id="72802af8-a7a2-4de1-888e-6fe1edc4c9ec.0" configVersion="46d9aff03a22ee4380e637867bc77e9400000000"/>
+		<Metadata name="Document.СоставлениеРасписания.ObjectModule" id="72802af8-a7a2-4de1-888e-6fe1edc4c9ec.0" configVersion="247f8fa72cd744439f671a52eb30d60400000000"/>
 		<Metadata name="DocumentNumerator.ДвижениеКонтингента" id="deaaf287-dd7e-4d32-886b-5023410e5223" configVersion="8574884c5a710340ab7e4f6d331e3e5100000000"/>
 		<Metadata name="Enum.ВидыДней" id="d43dc9ae-9b80-4b6d-9ce4-e5379b65312e" configVersion="e2879bd7c901444b9a8193ba249a0de800000000">
 			<Metadata name="Enum.ВидыДней.EnumValue.Выходной" id="03cc9c34-7184-4504-b6f7-b592ccf8e817"/>
