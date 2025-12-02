@@ -325,6 +325,7 @@
 		<ChildObjects>
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаГруппы</Form>
+			<Form>ФормаВыбораВРасписании</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

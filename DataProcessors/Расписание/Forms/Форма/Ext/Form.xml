@@ -498,8 +498,8 @@
 					<currentLevel xmlns="http://v8.1c.ru/8.2/data/chart">0</currentLevel>
 				</pl:timeScale>
 				<pl:period>
-					<pl:begin>2025-11-28T00:00:00</pl:begin>
-					<pl:end>2025-11-28T23:59:59</pl:end>
+					<pl:begin>2025-12-02T00:00:00</pl:begin>
+					<pl:end>2025-12-02T23:59:59</pl:end>
 				</pl:period>
 				<pl:displayCurrentDate>true</pl:displayCurrentDate>
 				<pl:itemsTimeRepresentation>DontDisplay</pl:itemsTimeRepresentation>
@@ -549,7 +549,6 @@
 	ДокументЗанятия.Группа КАК Группа,
 	ДокументЗанятия.УчебныйПлан КАК УчебныйПлан,
 	ДокументЗанятия.ДатаРасписания КАК ДатаРасписания,
-	ДокументЗанятия.ЖурналЗаполнен КАК ЖурналЗаполнен,
 	ДокументЗанятия.Семестр КАК Семестр,
 	ДокументЗанятия.Автор КАК Автор,
 	ДокументЗанятия.Расписание.(

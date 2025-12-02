@@ -69,11 +69,23 @@
 							<ContextMenu name="ГруппаКонтекстноеМеню" id="8"/>
 							<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="9"/>
 						</InputField>
-						<UsualGroup name="Группа2" id="58">
+						<UsualGroup name="ГруппаДополнительное" id="58">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дополнительное</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дополнительное</v8:content>
+								</v8:item>
+							</ToolTip>
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="59"/>
+							<ExtendedTooltip name="ГруппаДополнительноеРасширеннаяПодсказка" id="59"/>
 							<ChildItems>
 								<InputField name="УчебныйПлан" id="10">
 									<DataPath>Объект.УчебныйПлан</DataPath>
@@ -126,29 +138,10 @@
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ДатаРасписанияКонтекстноеМеню" id="14"/>
 							<ExtendedTooltip name="ДатаРасписанияРасширеннаяПодсказка" id="15"/>
+							<Events>
+								<Event name="OnChange">ДатаРасписанияПриИзменении</Event>
+							</Events>
 						</InputField>
-						<UsualGroup name="Группа3" id="63">
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="64"/>
-							<ChildItems>
-								<CheckBoxField name="ЖурналЗаполнен" id="16">
-									<DataPath>Объект.ЖурналЗаполнен</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Заполняется автоматически после заполнения журнала преподавателем</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ToolTipRepresentation>Button</ToolTipRepresentation>
-									<EditMode>EnterOnInput</EditMode>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ЖурналЗаполненКонтекстноеМеню" id="17"/>
-									<ExtendedTooltip name="ЖурналЗаполненРасширеннаяПодсказка" id="18"/>
-								</CheckBoxField>
-							</ChildItems>
-						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -204,9 +197,28 @@
 				<InputField name="РасписаниеДисциплина" id="38">
 					<DataPath>Объект.Расписание.Дисциплина</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<ClearButton>true</ClearButton>
+					<SpinButton>false</SpinButton>
+					<CreateButton>false</CreateButton>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<QuickChoice>false</QuickChoice>
+					<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 					<ContextMenu name="РасписаниеДисциплинаКонтекстноеМеню" id="39"/>
 					<ExtendedTooltip name="РасписаниеДисциплинаРасширеннаяПодсказка" id="40"/>
+					<Events>
+						<Event name="StartChoice">РасписаниеДисциплинаНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="РасписаниеЗанятиеПоРП" id="70">
+					<DataPath>1/0:41269427-0c69-4087-b1f3-eec859a179c1/0:51cc19e6-2565-43cc-9119-890a4feee07d</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РасписаниеЗанятиеПоРПКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="РасписаниеЗанятиеПоРПРасширеннаяПодсказка" id="72"/>
 				</InputField>
 				<InputField name="РасписаниеКабинет" id="41">
 					<DataPath>Объект.Расписание.Кабинет</DataPath>

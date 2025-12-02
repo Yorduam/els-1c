@@ -145,7 +145,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.тПроведениеЗанятия</name>
+		<name>Document.ПроведениеЗанятия</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

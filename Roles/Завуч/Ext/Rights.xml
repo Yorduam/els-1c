@@ -245,9 +245,17 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.тПроведениеЗанятия</name>
+		<name>Document.ПроведениеЗанятия</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>

@@ -292,7 +292,7 @@
 			<Document>ПереводОбучающихся</Document>
 			<Document>НагрузкаГруппы</Document>
 			<Document>СоставлениеРасписания</Document>
-			<Document>тПроведениеЗанятия</Document>
+			<Document>ПроведениеЗанятия</Document>
 			<DocumentNumerator>ДвижениеКонтингента</DocumentNumerator>
 			<Enum>ВидыДней</Enum>
 			<Enum>ДвижениеКонтингента</Enum>
@@ -305,18 +305,19 @@
 			<Report>СоставГруппы</Report>
 			<Report>ВыводРабочихПрограмм</Report>
 			<Report>ВыводКонтингента</Report>
-			<Report>Проверка</Report>
 			<DataProcessor>Расписание</DataProcessor>
 			<DataProcessor>ЖурналЗанятия</DataProcessor>
-			<InformationRegister>АктуальностьКонтингента</InformationRegister>
-			<InformationRegister>ВремяУрока</InformationRegister>
+			<DataProcessor>ТестовыйДашборд</DataProcessor>
 			<InformationRegister>ПривязкаПользователя</InformationRegister>
+			<InformationRegister>ВремяУрока</InformationRegister>
 			<InformationRegister>РегистрАдресации</InformationRegister>
+			<InformationRegister>АктуальностьКонтингента</InformationRegister>
 			<InformationRegister>РасписаниеНаДату</InformationRegister>
 			<InformationRegister>ОценкиСтудентов</InformationRegister>
 			<AccumulationRegister>ЧисленностьГруппы</AccumulationRegister>
 			<AccumulationRegister>АктивныйКонтингент</AccumulationRegister>
 			<AccumulationRegister>УчебныйПлан</AccumulationRegister>
+			<Task>ЗадачаВедениеЖурнала</Task>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

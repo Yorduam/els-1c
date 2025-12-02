@@ -106,13 +106,9 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.тПроведениеЗанятия</name>
+		<name>Document.ПроведениеЗанятия</name>
 		<right>
 			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Insert</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -125,10 +121,6 @@
 		</right>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveInsert</name>
 			<value>true</value>
 		</right>
 		<right>
