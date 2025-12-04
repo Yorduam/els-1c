@@ -28,6 +28,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.СоставлениеРасписания</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РасписаниеНаДату</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТестовыйДашборд</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">982c74cf-e782-4848-b927-e10c4d1b98d1</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

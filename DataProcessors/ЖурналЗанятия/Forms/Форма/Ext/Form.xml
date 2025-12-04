@@ -108,7 +108,7 @@
 					<UseAlternationRowColor>true</UseAlternationRowColor>
 					<EnableStartDrag>true</EnableStartDrag>
 					<DataPath>ДинамическийСписокЖурнал</DataPath>
-					<RowPictureDataPath>ДинамическийСписокЖурнал.DefaultPicture</RowPictureDataPath>
+					<RowPictureDataPath>~ДинамическийСписокЖурнал.DefaultPicture</RowPictureDataPath>
 					<AutoRefresh>false</AutoRefresh>
 					<AutoRefreshPeriod>60</AutoRefreshPeriod>
 					<Period>
@@ -177,7 +177,7 @@
 							<ExtendedTooltip name="ДинамическийСписокЖурналГруппаРасширеннаяПодсказка" id="40"/>
 							<ChildItems>
 								<InputField name="ЖурналМесяц" id="41">
-									<DataPath>ДинамическийСписокЖурнал.Дата</DataPath>
+									<DataPath>ДинамическийСписокЖурнал.ДатаЗанятия</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -195,7 +195,7 @@
 									<ExtendedTooltip name="ЖурналМесяцРасширеннаяПодсказка" id="43"/>
 								</InputField>
 								<LabelField name="ЖурналДата" id="27">
-									<DataPath>ДинамическийСписокЖурнал.Дата</DataPath>
+									<DataPath>ДинамическийСписокЖурнал.ДатаЗанятия</DataPath>
 									<Format>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -243,19 +243,15 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	АктуальностьКонтингентаСрезПоследних.Группа КАК Группа,
+	ОценкиСтудентов.Группа КАК Группа,
 	ОценкиСтудентов.Дисциплина КАК Дисциплина,
-	ОценкиСтудентов.ДатаЗанятия КАК Дата,
+	ОценкиСтудентов.ДатаЗанятия КАК ДатаЗанятия,
 	ОценкиСтудентов.Обучающийся КАК Обучающийся,
 	ОценкиСтудентов.Отметка КАК Отметка
 ИЗ
 	РегистрСведений.ОценкиСтудентов КАК ОценкиСтудентов
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.АктуальностьКонтингента.СрезПоследних КАК АктуальностьКонтингентаСрезПоследних
-		ПО ОценкиСтудентов.Обучающийся = АктуальностьКонтингентаСрезПоследних.Обучающийся
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РасписаниеНаДату КАК РасписаниеНаДату
-		ПО ОценкиСтудентов.ДатаЗанятия = РасписаниеНаДату.ДатаЗанятия
 ГДЕ
-	АктуальностьКонтингентаСрезПоследних.Группа = &amp;Группа
+	ОценкиСтудентов.Группа = &amp;Группа
 	И ОценкиСтудентов.Дисциплина = &amp;Дисциплина</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Обучающийся</dcssch:dataPath>
@@ -266,10 +262,6 @@
 					<dcssch:field>Группа</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Дата</dcssch:dataPath>
-					<dcssch:field>Дата</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Дисциплина</dcssch:dataPath>
 					<dcssch:field>Дисциплина</dcssch:field>
 				</Field>
@@ -278,30 +270,9 @@
 					<dcssch:field>Отметка</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Степень</dcssch:dataPath>
-					<dcssch:field>Степень</dcssch:field>
+					<dcssch:dataPath>ДатаЗанятия</dcssch:dataPath>
+					<dcssch:field>ДатаЗанятия</dcssch:field>
 				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПромежуточнаяАттестация</dcssch:dataPath>
-					<dcssch:field>ПромежуточнаяАттестация</dcssch:field>
-				</Field>
-				<Parameter>
-					<dcssch:name>Период</dcssch:name>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Период</v8:content>
-						</v8:item>
-					</dcssch:title>
-					<dcssch:valueType>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:DateQualifiers>
-							<v8:DateFractions>DateTime</v8:DateFractions>
-						</v8:DateQualifiers>
-					</dcssch:valueType>
-					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
-					<dcssch:useRestriction>false</dcssch:useRestriction>
-				</Parameter>
 				<Parameter>
 					<dcssch:name>Группа</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -330,7 +301,6 @@
 					<dcssch:value xsi:nil="true"/>
 					<dcssch:useRestriction>true</dcssch:useRestriction>
 				</Parameter>
-				<MainTable>InformationRegister.ОценкиСтудентов</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>

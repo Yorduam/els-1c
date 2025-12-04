@@ -305,6 +305,7 @@
 			<Report>СоставГруппы</Report>
 			<Report>ВыводРабочихПрограмм</Report>
 			<Report>ВыводКонтингента</Report>
+			<Report>Проверка</Report>
 			<DataProcessor>Расписание</DataProcessor>
 			<DataProcessor>ЖурналЗанятия</DataProcessor>
 			<DataProcessor>ТестовыйДашборд</DataProcessor>

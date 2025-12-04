@@ -62,18 +62,6 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="1cf1d27f-b075-4c79-aa43-93fdcf1e14a5">
-				<Properties>
-					<Name>СамостоятельнаяРабота</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Самостоятельная работа</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
 			<EnumValue uuid="33d07d0c-8ebf-4e94-9392-1ffe6625c86d">
 				<Properties>
 					<Name>ПромежуточнаяАттестация</Name>

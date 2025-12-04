@@ -498,8 +498,8 @@
 					<currentLevel xmlns="http://v8.1c.ru/8.2/data/chart">0</currentLevel>
 				</pl:timeScale>
 				<pl:period>
-					<pl:begin>2025-12-02T00:00:00</pl:begin>
-					<pl:end>2025-12-02T23:59:59</pl:end>
+					<pl:begin>2025-12-04T00:00:00</pl:begin>
+					<pl:end>2025-12-04T23:59:59</pl:end>
 				</pl:period>
 				<pl:displayCurrentDate>true</pl:displayCurrentDate>
 				<pl:itemsTimeRepresentation>DontDisplay</pl:itemsTimeRepresentation>
@@ -539,7 +539,7 @@
 			</Type>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>true</DynamicDataRead>
+				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	ДокументЗанятия.Ссылка КАК Ссылка,
 	ДокументЗанятия.ПометкаУдаления КАК ПометкаУдаления,
@@ -571,10 +571,6 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Номер</dcssch:dataPath>
 					<dcssch:field>Номер</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ЖурналЗаполнен</dcssch:dataPath>
-					<dcssch:field>ЖурналЗаполнен</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>

@@ -113,7 +113,7 @@
 									<ExtendedTooltip name="СеместрРасширеннаяПодсказка" id="12"/>
 								</InputField>
 								<InputField name="ДатаРасписания" id="19">
-									<DataPath>Объект.ДатаРасписания</DataPath>
+									<DataPath>Объект.ДатаЗанятия</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ДатаРасписанияКонтекстноеМеню" id="20"/>
@@ -162,13 +162,27 @@
 											<ContextMenu name="ПреподавательКонтекстноеМеню" id="23"/>
 											<ExtendedTooltip name="ПреподавательРасширеннаяПодсказка" id="24"/>
 										</InputField>
-										<InputField name="Кабинет" id="16">
-											<DataPath>Объект.Кабинет</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="КабинетКонтекстноеМеню" id="17"/>
-											<ExtendedTooltip name="КабинетРасширеннаяПодсказка" id="18"/>
-										</InputField>
+										<UsualGroup name="Группа1" id="90">
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="91"/>
+											<ChildItems>
+												<InputField name="Кабинет" id="16">
+													<DataPath>Объект.Кабинет</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="КабинетКонтекстноеМеню" id="17"/>
+													<ExtendedTooltip name="КабинетРасширеннаяПодсказка" id="18"/>
+												</InputField>
+												<InputField name="Занятие" id="87">
+													<DataPath>Объект.Занятие</DataPath>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ЗанятиеКонтекстноеМеню" id="88"/>
+													<ExtendedTooltip name="ЗанятиеРасширеннаяПодсказка" id="89"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
 								<InputField name="Тема" id="25">
@@ -178,12 +192,12 @@
 									<ContextMenu name="ТемаКонтекстноеМеню" id="26"/>
 									<ExtendedTooltip name="ТемаРасширеннаяПодсказка" id="27"/>
 								</InputField>
-								<InputField name="Занятие" id="28">
-									<DataPath>Объект.Занятие</DataPath>
+								<InputField name="Содержание" id="28">
+									<DataPath>Объект.Содержание</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="ЗанятиеКонтекстноеМеню" id="29"/>
-									<ExtendedTooltip name="ЗанятиеРасширеннаяПодсказка" id="30"/>
+									<ContextMenu name="СодержаниеКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="СодержаниеРасширеннаяПодсказка" id="30"/>
 								</InputField>
 								<InputField name="ДомашнееЗанятие" id="31">
 									<DataPath>Объект.ДомашнееЗанятие</DataPath>
@@ -198,6 +212,12 @@
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ЛитератураКонтекстноеМеню" id="35"/>
 									<ExtendedTooltip name="ЛитератураРасширеннаяПодсказка" id="36"/>
+								</InputField>
+								<InputField name="ФормаОрганизации" id="84">
+									<DataPath>Объект.ФормаОрганизации</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ФормаОрганизацииКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ФормаОрганизацииРасширеннаяПодсказка" id="86"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>

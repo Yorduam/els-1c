@@ -20,7 +20,7 @@
 			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РегистрАдресации</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">41321bba-d5ed-48f7-8d7e-33eb5569d70a</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Проверка</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
