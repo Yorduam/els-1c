@@ -49,7 +49,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Илья Минин</Vendor>
-			<Version>0.3.0</Version>
+			<Version>0.3.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -307,8 +307,9 @@
 			<Report>ВыводКонтингента</Report>
 			<Report>Проверка</Report>
 			<DataProcessor>Расписание</DataProcessor>
-			<DataProcessor>ЖурналЗанятия</DataProcessor>
-			<DataProcessor>ТестовыйДашборд</DataProcessor>
+			<DataProcessor>РасписаниеПреподавателя</DataProcessor>
+			<DataProcessor>_ЖурналЗанятия</DataProcessor>
+			<DataProcessor>_ТестовыйДашборд</DataProcessor>
 			<InformationRegister>ПривязкаПользователя</InformationRegister>
 			<InformationRegister>ВремяУрока</InformationRegister>
 			<InformationRegister>РегистрАдресации</InformationRegister>
@@ -318,7 +319,7 @@
 			<AccumulationRegister>ЧисленностьГруппы</AccumulationRegister>
 			<AccumulationRegister>АктивныйКонтингент</AccumulationRegister>
 			<AccumulationRegister>УчебныйПлан</AccumulationRegister>
-			<Task>ЗадачаВедениеЖурнала</Task>
+			<Task>_ЗадачаВедениеЖурнала</Task>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

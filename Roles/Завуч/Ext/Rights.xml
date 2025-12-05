@@ -234,6 +234,13 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.ПривязкаПользователя</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.АктуальностьКонтингента</name>
 		<right>
 			<name>Read</name>
@@ -477,7 +484,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ЖурналЗанятия</name>
+		<name>DataProcessor._ЖурналЗанятия</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>

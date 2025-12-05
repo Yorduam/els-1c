@@ -321,6 +321,13 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.ПривязкаПользователя</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.АктуальностьКонтингента</name>
 		<right>
 			<name>Read</name>

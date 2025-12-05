@@ -3,7 +3,7 @@
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
-			<v8:content>Расписание</v8:content>
+			<v8:content>Личное расписание</v8:content>
 		</v8:item>
 	</Title>
 	<AutoTitle>false</AutoTitle>
@@ -37,22 +37,6 @@
 					<Width>11</Width>
 					<CommandName>Form.Command.Обновить</CommandName>
 					<ExtendedTooltip name="КнопкаОбновитьРасширеннаяПодсказка" id="19"/>
-				</Button>
-				<Button name="Создать" id="93">
-					<Type>UsualButton</Type>
-					<Representation>PictureAndText</Representation>
-					<CommandName>Document.СоставлениеРасписания.StandardCommand.Create</CommandName>
-					<Picture>
-						<xr:Ref>StdPicture.CreateListItem</xr:Ref>
-						<xr:LoadTransparent>true</xr:LoadTransparent>
-					</Picture>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Добавить занятия</v8:content>
-						</v8:item>
-					</Title>
-					<ExtendedTooltip name="СоздатьРасширеннаяПодсказка" id="94"/>
 				</Button>
 				<CommandBar name="Еще" id="22">
 					<Title>
@@ -155,26 +139,42 @@
 							</ToolTip>
 							<ExtendedTooltip name="СтраницаСписокРасширеннаяПодсказка" id="29"/>
 							<ChildItems>
-								<UsualGroup name="Группа1" id="58">
+								<UsualGroup name="ГруппаЗанятия" id="58">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа занятия</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа занятия</v8:content>
+										</v8:item>
+									</ToolTip>
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="59"/>
+									<ExtendedTooltip name="ГруппаЗанятияРасширеннаяПодсказка" id="59"/>
 									<ChildItems>
-										<Table name="ДинамическийСписокРасписания" id="30">
+										<Table name="ДинамическийСписокЗанятий" id="30">
 											<Height>6</Height>
 											<UseAlternationRowColor>true</UseAlternationRowColor>
 											<EnableStartDrag>true</EnableStartDrag>
-											<DataPath>ДинамическийСписокРасписания</DataPath>
-											<RowPictureDataPath>ДинамическийСписокРасписания.DefaultPicture</RowPictureDataPath>
+											<DataPath>ДинамическийСписокЗанятий</DataPath>
+											<RowPictureDataPath>ДинамическийСписокЗанятий.DefaultPicture</RowPictureDataPath>
 											<CommandSet>
 												<ExcludedCommand>CancelSearch</ExcludedCommand>
+												<ExcludedCommand>Change</ExcludedCommand>
 												<ExcludedCommand>ChangeHistory</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
 												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+												<ExcludedCommand>Create</ExcludedCommand>
 												<ExcludedCommand>Delete</ExcludedCommand>
 												<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
 												<ExcludedCommand>Find</ExcludedCommand>
 												<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+												<ExcludedCommand>GetURL</ExcludedCommand>
 												<ExcludedCommand>ListSettings</ExcludedCommand>
 												<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 												<ExcludedCommand>OutputList</ExcludedCommand>
@@ -202,138 +202,76 @@
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
 											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
-											<ContextMenu name="ДинамическийСписокРасписанияКонтекстноеМеню" id="31"/>
-											<AutoCommandBar name="ДинамическийСписокРасписанияКоманднаяПанель" id="32"/>
-											<ExtendedTooltip name="ДинамическийСписокРасписанияРасширеннаяПодсказка" id="33"/>
-											<SearchStringAddition name="ДинамическийСписокРасписанияСтрокаПоиска" id="34">
+											<ContextMenu name="ДинамическийСписокЗанятийКонтекстноеМеню" id="31"/>
+											<AutoCommandBar name="ДинамическийСписокЗанятийКоманднаяПанель" id="32">
+												<Autofill>false</Autofill>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ДинамическийСписокЗанятийРасширеннаяПодсказка" id="33"/>
+											<SearchStringAddition name="ДинамическийСписокЗанятийСтрокаПоиска" id="34">
 												<AdditionSource>
-													<Item>ДинамическийСписокРасписания</Item>
+													<Item>ДинамическийСписокЗанятий</Item>
 													<Type>SearchStringRepresentation</Type>
 												</AdditionSource>
-												<ContextMenu name="ДинамическийСписокРасписанияСтрокаПоискаКонтекстноеМеню" id="35"/>
-												<ExtendedTooltip name="ДинамическийСписокРасписанияСтрокаПоискаРасширеннаяПодсказка" id="36"/>
+												<ContextMenu name="ДинамическийСписокЗанятийСтрокаПоискаКонтекстноеМеню" id="35"/>
+												<ExtendedTooltip name="ДинамическийСписокЗанятийСтрокаПоискаРасширеннаяПодсказка" id="36"/>
 											</SearchStringAddition>
-											<ViewStatusAddition name="ДинамическийСписокРасписанияСостояниеПросмотра" id="37">
+											<ViewStatusAddition name="ДинамическийСписокЗанятийСостояниеПросмотра" id="37">
 												<AdditionSource>
-													<Item>ДинамическийСписокРасписания</Item>
+													<Item>ДинамическийСписокЗанятий</Item>
 													<Type>ViewStatusRepresentation</Type>
 												</AdditionSource>
-												<ContextMenu name="ДинамическийСписокРасписанияСостояниеПросмотраКонтекстноеМеню" id="38"/>
-												<ExtendedTooltip name="ДинамическийСписокРасписанияСостояниеПросмотраРасширеннаяПодсказка" id="39"/>
+												<ContextMenu name="ДинамическийСписокЗанятийСостояниеПросмотраКонтекстноеМеню" id="38"/>
+												<ExtendedTooltip name="ДинамическийСписокЗанятийСостояниеПросмотраРасширеннаяПодсказка" id="39"/>
 											</ViewStatusAddition>
-											<SearchControlAddition name="ДинамическийСписокРасписанияУправлениеПоиском" id="40">
+											<SearchControlAddition name="ДинамическийСписокЗанятийУправлениеПоиском" id="40">
 												<AdditionSource>
-													<Item>ДинамическийСписокРасписания</Item>
+													<Item>ДинамическийСписокЗанятий</Item>
 													<Type>SearchControl</Type>
 												</AdditionSource>
-												<ContextMenu name="ДинамическийСписокРасписанияУправлениеПоискомКонтекстноеМеню" id="41"/>
-												<ExtendedTooltip name="ДинамическийСписокРасписанияУправлениеПоискомРасширеннаяПодсказка" id="42"/>
+												<ContextMenu name="ДинамическийСписокЗанятийУправлениеПоискомКонтекстноеМеню" id="41"/>
+												<ExtendedTooltip name="ДинамическийСписокЗанятийУправлениеПоискомРасширеннаяПодсказка" id="42"/>
 											</SearchControlAddition>
 											<ChildItems>
-												<LabelField name="ДинамическийСписокДатаРасписания" id="55">
-													<DataPath>ДинамическийСписокРасписания.ДатаРасписания</DataPath>
-													<ContextMenu name="ДинамическийСписокДатаРасписанияКонтекстноеМеню" id="56"/>
-													<ExtendedTooltip name="ДинамическийСписокДатаРасписанияРасширеннаяПодсказка" id="57"/>
+												<LabelField name="ДинамическийСписокДатаЗанятия" id="55">
+													<DataPath>ДинамическийСписокЗанятий.ДатаЗанятия</DataPath>
+													<ContextMenu name="ДинамическийСписокДатаЗанятияКонтекстноеМеню" id="56"/>
+													<ExtendedTooltip name="ДинамическийСписокДатаЗанятияРасширеннаяПодсказка" id="57"/>
 												</LabelField>
 												<LabelField name="ДинамическийСписокГруппа" id="49">
-													<DataPath>ДинамическийСписокРасписания.Группа</DataPath>
+													<DataPath>ДинамическийСписокЗанятий.Группа</DataPath>
 													<ContextMenu name="ДинамическийСписокГруппаКонтекстноеМеню" id="50"/>
 													<ExtendedTooltip name="ДинамическийСписокГруппаРасширеннаяПодсказка" id="51"/>
+												</LabelField>
+												<LabelField name="ДинамическийСписокРасписанияДисциплина" id="93">
+													<DataPath>ДинамическийСписокЗанятий.Дисциплина</DataPath>
+													<ContextMenu name="ДинамическийСписокРасписанияДисциплинаКонтекстноеМеню" id="94"/>
+													<ExtendedTooltip name="ДинамическийСписокРасписанияДисциплинаРасширеннаяПодсказка" id="95"/>
+												</LabelField>
+												<LabelField name="ДинамическийСписокРасписанияКабинет" id="96">
+													<DataPath>ДинамическийСписокЗанятий.Кабинет</DataPath>
+													<ContextMenu name="ДинамическийСписокРасписанияКабинетКонтекстноеМеню" id="97"/>
+													<ExtendedTooltip name="ДинамическийСписокРасписанияКабинетРасширеннаяПодсказка" id="98"/>
 												</LabelField>
 											</ChildItems>
 										</Table>
 									</ChildItems>
 								</UsualGroup>
-								<UsualGroup name="Группа2" id="60">
+								<UsualGroup name="ГруппаПодробнее" id="60">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа подробнее</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа подробнее</v8:content>
+										</v8:item>
+									</ToolTip>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="61"/>
-									<ChildItems>
-										<Table name="ДинамическийСписокЗанятия" id="62">
-											<Representation>List</Representation>
-											<HeightControlVariant>UseContentHeight</HeightControlVariant>
-											<AutoInsertNewRow>true</AutoInsertNewRow>
-											<EnableStartDrag>true</EnableStartDrag>
-											<EnableDrag>true</EnableDrag>
-											<DataPath>Items.ДинамическийСписокРасписания.CurrentData.Расписание</DataPath>
-											<RowFilter xsi:nil="true"/>
-											<ContextMenu name="ДинамическийСписокЗанятияКонтекстноеМеню" id="63"/>
-											<AutoCommandBar name="ДинамическийСписокЗанятияКоманднаяПанель" id="64">
-												<Autofill>false</Autofill>
-											</AutoCommandBar>
-											<ExtendedTooltip name="ДинамическийСписокЗанятияРасширеннаяПодсказка" id="65"/>
-											<SearchStringAddition name="ДинамическийСписокЗанятияСтрокаПоиска" id="66">
-												<AdditionSource>
-													<Item>ДинамическийСписокЗанятия</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ДинамическийСписокЗанятияСтрокаПоискаКонтекстноеМеню" id="67"/>
-												<ExtendedTooltip name="ДинамическийСписокЗанятияСтрокаПоискаРасширеннаяПодсказка" id="68"/>
-											</SearchStringAddition>
-											<ViewStatusAddition name="ДинамическийСписокЗанятияСостояниеПросмотра" id="69">
-												<AdditionSource>
-													<Item>ДинамическийСписокЗанятия</Item>
-													<Type>ViewStatusRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ДинамическийСписокЗанятияСостояниеПросмотраКонтекстноеМеню" id="70"/>
-												<ExtendedTooltip name="ДинамическийСписокЗанятияСостояниеПросмотраРасширеннаяПодсказка" id="71"/>
-											</ViewStatusAddition>
-											<SearchControlAddition name="ДинамическийСписокЗанятияУправлениеПоиском" id="72">
-												<AdditionSource>
-													<Item>ДинамическийСписокЗанятия</Item>
-													<Type>SearchControl</Type>
-												</AdditionSource>
-												<ContextMenu name="ДинамическийСписокЗанятияУправлениеПоискомКонтекстноеМеню" id="73"/>
-												<ExtendedTooltip name="ДинамическийСписокЗанятияУправлениеПоискомРасширеннаяПодсказка" id="74"/>
-											</SearchControlAddition>
-											<ChildItems>
-												<InputField name="ДинамическийСписокЗанятияЗанятие" id="84">
-													<DataPath>Items.ДинамическийСписокРасписания.CurrentData.Расписание.Занятие</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<Width>1</Width>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ДинамическийСписокЗанятияЗанятиеКонтекстноеМеню" id="85"/>
-													<ExtendedTooltip name="ДинамическийСписокЗанятияЗанятиеРасширеннаяПодсказка" id="86"/>
-												</InputField>
-												<InputField name="ДинамическийСписокЗанятияДисциплина" id="81">
-													<DataPath>Items.ДинамическийСписокРасписания.CurrentData.Расписание.Дисциплина</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<Width>5</Width>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ДинамическийСписокЗанятияДисциплинаКонтекстноеМеню" id="82"/>
-													<ExtendedTooltip name="ДинамическийСписокЗанятияДисциплинаРасширеннаяПодсказка" id="83"/>
-												</InputField>
-												<InputField name="ДинамическийСписокЗанятияКабинет" id="87">
-													<DataPath>Items.ДинамическийСписокРасписания.CurrentData.Расписание.Кабинет</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Кабинет</v8:content>
-														</v8:item>
-													</Title>
-													<EditMode>EnterOnInput</EditMode>
-													<Width>2</Width>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ДинамическийСписокЗанятияКабинетКонтекстноеМеню" id="88"/>
-													<ExtendedTooltip name="ДинамическийСписокЗанятияКабинетРасширеннаяПодсказка" id="89"/>
-												</InputField>
-												<InputField name="ДинамическийСписокЗанятияПреподаватель" id="90">
-													<DataPath>Items.ДинамическийСписокРасписания.CurrentData.Расписание.Преподаватель</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Преподаватель</v8:content>
-														</v8:item>
-													</Title>
-													<EditMode>EnterOnInput</EditMode>
-													<Width>3</Width>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ДинамическийСписокЗанятияПреподавательКонтекстноеМеню" id="91"/>
-													<ExtendedTooltip name="ДинамическийСписокЗанятияПреподавательРасширеннаяПодсказка" id="92"/>
-												</InputField>
-											</ChildItems>
-										</Table>
-									</ChildItems>
+									<ExtendedTooltip name="ГруппаПодробнееРасширеннаяПодсказка" id="61"/>
 								</UsualGroup>
 							</ChildItems>
 						</Page>
@@ -368,27 +306,6 @@
 								<Event name="OnActivateDate">КалендарьПриАктивизацииДаты</Event>
 							</Events>
 						</CalendarField>
-						<InputField name="Группа" id="11">
-							<DataPath>Группа</DataPath>
-							<DropListButton>false</DropListButton>
-							<ChoiceButton>true</ChoiceButton>
-							<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
-							<ClearButton>true</ClearButton>
-							<OpenButton>true</OpenButton>
-							<CreateButton>false</CreateButton>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<InputHint>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Выберите группу</v8:content>
-								</v8:item>
-							</InputHint>
-							<ContextMenu name="ГруппаКонтекстноеМеню" id="12"/>
-							<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="13"/>
-							<Events>
-								<Event name="OnChange">ГруппаПриИзменении</Event>
-							</Events>
-						</InputField>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -516,22 +433,22 @@
 				<pl:newItemsTextType>FormattedString</pl:newItemsTextType>
 			</Settings>
 		</Attribute>
-		<Attribute name="Группа" id="4">
+		<Attribute name="Пользователь" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа</v8:content>
+					<v8:content>Пользователь</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>cfg:CatalogRef.Группы</v8:Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ДинамическийСписокРасписания" id="1">
+		<Attribute name="ДинамическийСписокЗанятий" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Динамический список расписания</v8:content>
+					<v8:content>Динамический список занятий</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -541,29 +458,25 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	ДокументЗанятия.Ссылка КАК Ссылка,
-	ДокументЗанятия.ПометкаУдаления КАК ПометкаУдаления,
-	ДокументЗанятия.Номер КАК Номер,
-	ДокументЗанятия.Дата КАК Дата,
-	ДокументЗанятия.Проведен КАК Проведен,
-	ДокументЗанятия.Группа КАК Группа,
-	ДокументЗанятия.УчебныйПлан КАК УчебныйПлан,
-	ДокументЗанятия.ДатаРасписания КАК ДатаРасписания,
-	ДокументЗанятия.Семестр КАК Семестр,
-	ДокументЗанятия.Автор КАК Автор,
-	ДокументЗанятия.Расписание.(
-		Ссылка КАК Ссылка,
-		НомерСтроки КАК НомерСтроки,
-		Занятие КАК Занятие,
-		Дисциплина КАК Дисциплина,
-		Кабинет КАК Кабинет,
-		Преподаватель КАК Преподаватель
-	) КАК Расписание,
-	ДокументЗанятия.МоментВремени КАК МоментВремени
+	ПроведениеЗанятия.Ссылка КАК Ссылка,
+	ПроведениеЗанятия.ВерсияДанных КАК ВерсияДанных,
+	ПроведениеЗанятия.ПометкаУдаления КАК ПометкаУдаления,
+	ПроведениеЗанятия.Номер КАК Номер,
+	ПроведениеЗанятия.Дата КАК Дата,
+	ПроведениеЗанятия.Проведен КАК Проведен,
+	ПроведениеЗанятия.Группа КАК Группа,
+	ПроведениеЗанятия.Дисциплина КАК Дисциплина,
+	ПроведениеЗанятия.Кабинет КАК Кабинет,
+	ПроведениеЗанятия.ДатаЗанятия КАК ДатаЗанятия,
+	ПроведениеЗанятия.Представление КАК Представление,
+	ПроведениеЗанятия.МоментВремени КАК МоментВремени,
+	РасписаниеНаДатуСрезПоследних.ЖурналЗаполнен КАК ЖурналЗаполнен
 ИЗ
-	Документ.СоставлениеРасписания КАК ДокументЗанятия
+	РегистрСведений.РасписаниеНаДату.СрезПоследних КАК РасписаниеНаДатуСрезПоследних
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПроведениеЗанятия КАК ПроведениеЗанятия
+		ПО РасписаниеНаДатуСрезПоследних.СсылкаНаЖурнал = ПроведениеЗанятия.Ссылка
 ГДЕ
-	ДокументЗанятия.Группа = &amp;Группа</QueryText>
+	ПроведениеЗанятия.Преподаватель = &amp;Преподаватель</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Ссылка</dcssch:dataPath>
 					<dcssch:field>Ссылка</dcssch:field>
@@ -577,24 +490,12 @@
 					<dcssch:field>ПометкаУдаления</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ДатаРасписания</dcssch:dataPath>
-					<dcssch:field>ДатаРасписания</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Проведен</dcssch:dataPath>
 					<dcssch:field>Проведен</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Дата</dcssch:dataPath>
 					<dcssch:field>Дата</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>УчебныйПлан</dcssch:dataPath>
-					<dcssch:field>УчебныйПлан</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Расписание.Кабинет</dcssch:dataPath>
-					<dcssch:field>Расписание.Кабинет</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Группа</dcssch:dataPath>
@@ -609,47 +510,65 @@
 					<dcssch:field>Семестр</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Расписание.Ссылка</dcssch:dataPath>
-					<dcssch:field>Расписание.Ссылка</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Расписание.Преподаватель</dcssch:dataPath>
-					<dcssch:field>Расписание.Преподаватель</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Расписание.НомерСтроки</dcssch:dataPath>
-					<dcssch:field>Расписание.НомерСтроки</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Расписание.Занятие</dcssch:dataPath>
-					<dcssch:field>Расписание.Занятие</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Расписание.Дисциплина</dcssch:dataPath>
-					<dcssch:field>Расписание.Дисциплина</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
-					<dcssch:dataPath>Расписание</dcssch:dataPath>
-					<dcssch:field>Расписание</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>МоментВремени</dcssch:dataPath>
 					<dcssch:field>МоментВремени</dcssch:field>
 				</Field>
-				<Parameter>
-					<dcssch:name>Группа</dcssch:name>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа</v8:content>
-						</v8:item>
-					</dcssch:title>
-					<dcssch:valueType>
-						<v8:Type>cfg:CatalogRef.Группы</v8:Type>
-					</dcssch:valueType>
-					<dcssch:value xsi:nil="true"/>
-					<dcssch:useRestriction>true</dcssch:useRestriction>
-				</Parameter>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Занятие</dcssch:dataPath>
+					<dcssch:field>Занятие</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дисциплина</dcssch:dataPath>
+					<dcssch:field>Дисциплина</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаЗанятия</dcssch:dataPath>
+					<dcssch:field>ДатаЗанятия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Тема</dcssch:dataPath>
+					<dcssch:field>Тема</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДомашнееЗанятие</dcssch:dataPath>
+					<dcssch:field>ДомашнееЗанятие</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Кабинет</dcssch:dataPath>
+					<dcssch:field>Кабинет</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Преподаватель</dcssch:dataPath>
+					<dcssch:field>Преподаватель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Содержание</dcssch:dataPath>
+					<dcssch:field>Содержание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ФормаОрганизации</dcssch:dataPath>
+					<dcssch:field>ФормаОрганизации</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Литература</dcssch:dataPath>
+					<dcssch:field>Литература</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Основание</dcssch:dataPath>
+					<dcssch:field>Основание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИтогиПроведения</dcssch:dataPath>
+					<dcssch:field>ИтогиПроведения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВерсияДанных</dcssch:dataPath>
+					<dcssch:field>ВерсияДанных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЖурналЗаполнен</dcssch:dataPath>
+					<dcssch:field>ЖурналЗаполнен</dcssch:field>
+				</Field>
 				<Parameter>
 					<dcssch:name>ДатаНачала</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -684,7 +603,38 @@
 					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
 					<dcssch:useRestriction>true</dcssch:useRestriction>
 				</Parameter>
-				<MainTable>Document.СоставлениеРасписания</MainTable>
+				<Parameter>
+					<dcssch:name>Преподаватель</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Преподаватель</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Кадры</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>Document.ПроведениеЗанятия</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -698,15 +648,21 @@
 						<dcsset:item>
 							<dcsset:selection>
 								<dcsset:item>
-									<dcsset:field>ДатаРасписания</dcsset:field>
+									<dcsset:field>ДатаЗанятия</dcsset:field>
 								</dcsset:item>
 								<dcsset:item>
 									<dcsset:field>Группа</dcsset:field>
 								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>Дисциплина</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>Кабинет</dcsset:field>
+								</dcsset:item>
 							</dcsset:selection>
 							<dcsset:filter>
 								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">ДатаРасписания</dcsset:left>
+									<dcsset:left xsi:type="dcscor:Field">ДатаЗанятия</dcsset:left>
 									<dcsset:comparisonType>Less</dcsset:comparisonType>
 									<dcsset:right xsi:type="v8:StandardBeginningDate">
 										<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
@@ -723,15 +679,21 @@
 						<dcsset:item>
 							<dcsset:selection>
 								<dcsset:item>
-									<dcsset:field>ДатаРасписания</dcsset:field>
+									<dcsset:field>ДатаЗанятия</dcsset:field>
 								</dcsset:item>
 								<dcsset:item>
 									<dcsset:field>Группа</dcsset:field>
 								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>Дисциплина</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>Кабинет</dcsset:field>
+								</dcsset:item>
 							</dcsset:selection>
 							<dcsset:filter>
 								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">ДатаРасписания</dcsset:left>
+									<dcsset:left xsi:type="dcscor:Field">ДатаЗанятия</dcsset:left>
 									<dcsset:comparisonType>Equal</dcsset:comparisonType>
 									<dcsset:right xsi:type="v8:StandardBeginningDate">
 										<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
@@ -748,15 +710,21 @@
 						<dcsset:item>
 							<dcsset:selection>
 								<dcsset:item>
-									<dcsset:field>ДатаРасписания</dcsset:field>
+									<dcsset:field>ДатаЗанятия</dcsset:field>
 								</dcsset:item>
 								<dcsset:item>
 									<dcsset:field>Группа</dcsset:field>
 								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>Дисциплина</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>Кабинет</dcsset:field>
+								</dcsset:item>
 							</dcsset:selection>
 							<dcsset:filter>
 								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">ДатаРасписания</dcsset:left>
+									<dcsset:left xsi:type="dcscor:Field">ДатаЗанятия</dcsset:left>
 									<dcsset:comparisonType>Greater</dcsset:comparisonType>
 									<dcsset:right xsi:type="v8:StandardBeginningDate">
 										<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
@@ -770,6 +738,35 @@
 								</dcscor:item>
 							</dcsset:appearance>
 						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ДатаЗанятия</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>Группа</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>Дисциплина</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>Кабинет</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ЖурналЗаполнен</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:Yellow</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
 					</dcsset:conditionalAppearance>
@@ -777,6 +774,17 @@
 					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
 				</ListSettings>
 			</Settings>
+		</Attribute>
+		<Attribute name="Преподаватель" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Преподаватель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Кадры</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>

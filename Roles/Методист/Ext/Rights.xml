@@ -222,6 +222,13 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.ПривязкаПользователя</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ПереводОбучающихся.TabularSection.Абитуриенты</name>
 		<right>
 			<name>View</name>
