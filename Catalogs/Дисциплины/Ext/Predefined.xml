@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.16">
+	<Item id="59d57df0-21ba-4918-840b-5b6c8467fb4a">
+		<Name>КвалификационнаяРабота</Name>
+		<Code>100000002</Code>
+		<Description>Квалификационная работа</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e1c7de90-114e-42b7-8514-61b745f66c59">
+		<Name>КурсоваяРабота</Name>
+		<Code>100000001</Code>
+		<Description>Курсовая работа</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

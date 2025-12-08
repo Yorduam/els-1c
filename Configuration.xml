@@ -287,6 +287,7 @@
 			<Catalog>НастройкаКурса</Catalog>
 			<Catalog>НастройкаУрока</Catalog>
 			<Catalog>Пользователи</Catalog>
+			<Catalog>ТемыРабот</Catalog>
 			<Document>ЗачислениеОбучающихся</Document>
 			<Document>ОтчислениеОбучающихся</Document>
 			<Document>ПереводОбучающихся</Document>
@@ -321,6 +322,7 @@
 			<InformationRegister>АктуальностьКонтингента</InformationRegister>
 			<InformationRegister>РасписаниеНаДату</InformationRegister>
 			<InformationRegister>ОценкиСтудентов</InformationRegister>
+			<InformationRegister>ИтоговыеОценки</InformationRegister>
 			<AccumulationRegister>ЧисленностьГруппы</AccumulationRegister>
 			<AccumulationRegister>АктивныйКонтингент</AccumulationRegister>
 			<AccumulationRegister>УчебныйПлан</AccumulationRegister>

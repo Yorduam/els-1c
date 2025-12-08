@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСоздатьПротоколы" id="62">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.СоздатьПротоколы</CommandName>
+				<ExtendedTooltip name="ФормаСоздатьПротоколыРасширеннаяПодсказка" id="63"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Основное" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная информация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основное</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ОсновноеРасширеннаяПодсказка" id="51"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Реквизиты" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизиты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизиты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="РеквизитыРасширеннаяПодсказка" id="53"/>
+			<ChildItems>
+				<InputField name="Группа" id="7">
+					<DataPath>Объект.Группа</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ГруппаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="Семестр" id="10">
+					<DataPath>Объект.Семестр</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СеместрКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="СеместрРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="Дисциплина" id="13">
+					<DataPath>Объект.Дисциплина</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДисциплинаКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ДисциплинаРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Руководитель" id="19">
+			<DataPath>Объект.Руководитель</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="РуководительКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="РуководительРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ДатаЗащиты" id="16">
+			<DataPath>Объект.ДатаЗащиты</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаЗащитыКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ДатаЗащитыРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<Table name="Обучающиеся" id="25">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Обучающиеся</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОбучающиесяКонтекстноеМеню" id="26"/>
+			<AutoCommandBar name="ОбучающиесяКоманднаяПанель" id="27"/>
+			<ExtendedTooltip name="ОбучающиесяРасширеннаяПодсказка" id="28"/>
+			<SearchStringAddition name="ОбучающиесяСтрокаПоиска" id="29">
+				<AdditionSource>
+					<Item>Обучающиеся</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОбучающиесяСтрокаПоискаКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ОбучающиесяСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОбучающиесяСостояниеПросмотра" id="32">
+				<AdditionSource>
+					<Item>Обучающиеся</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОбучающиесяСостояниеПросмотраКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ОбучающиесяСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОбучающиесяУправлениеПоиском" id="35">
+				<AdditionSource>
+					<Item>Обучающиеся</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОбучающиесяУправлениеПоискомКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="ОбучающиесяУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ОбучающиесяНомерСтроки" id="38">
+					<DataPath>Объект.Обучающиеся.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОбучающиесяНомерСтрокиКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ОбучающиесяНомерСтрокиРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<InputField name="ОбучающиесяОбучающийся" id="41">
+					<DataPath>Объект.Обучающиеся.Обучающийся</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОбучающиесяОбучающийсяКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ОбучающиесяОбучающийсяРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ОбучающиесяТема" id="44">
+					<DataPath>Объект.Обучающиеся.Тема</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<MultiLine>true</MultiLine>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОбучающиесяТемаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ОбучающиесяТемаРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ОбучающиесяНаПримере" id="47">
+					<DataPath>Объект.Обучающиеся.НаПримере</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОбучающиесяНаПримереКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ОбучающиесяНаПримереРасширеннаяПодсказка" id="49"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаПодвал" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>web:LightGray</BackColor>
+			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="55"/>
+			<ChildItems>
+				<LabelField name="Основание" id="56">
+					<DataPath>Объект.Основание</DataPath>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ContextMenu name="ОснованиеКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ОснованиеРасширеннаяПодсказка" id="58"/>
+				</LabelField>
+				<LabelField name="Автор" id="59">
+					<DataPath>Объект.Автор</DataPath>
+					<ContextMenu name="АвторКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="61"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.НазначениеКурсовойРаботы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьПротоколы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать протоколы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступна при проведенном документе</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Document</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьПротоколы</Action>
+		</Command>
+	</Commands>
+</Form>

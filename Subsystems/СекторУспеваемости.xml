@@ -25,6 +25,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПроведениеЗанятия</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Task._ЗадачаВедениеЖурнала</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РасписаниеПреподавателя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИтоговыеОценки</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
