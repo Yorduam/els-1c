@@ -49,7 +49,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Илья Минин</Vendor>
-			<Version>0.3.1</Version>
+			<Version>0.4.0</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -293,6 +293,11 @@
 			<Document>НагрузкаГруппы</Document>
 			<Document>СоставлениеРасписания</Document>
 			<Document>ПроведениеЗанятия</Document>
+			<Document>НазначениеКурсовойРаботы</Document>
+			<Document>ПротоколКурсовойРаботы</Document>
+			<Document>_ДипломнаяРабота</Document>
+			<Document>_ВыпускОбучающихся</Document>
+			<Document>_ПроведениеДЭ</Document>
 			<DocumentNumerator>ДвижениеКонтингента</DocumentNumerator>
 			<Enum>ВидыДней</Enum>
 			<Enum>ДвижениеКонтингента</Enum>
@@ -309,7 +314,7 @@
 			<DataProcessor>Расписание</DataProcessor>
 			<DataProcessor>РасписаниеПреподавателя</DataProcessor>
 			<DataProcessor>_ЖурналЗанятия</DataProcessor>
-			<DataProcessor>_ТестовыйДашборд</DataProcessor>
+			<DataProcessor>ПанельРабочейОбласти</DataProcessor>
 			<InformationRegister>ПривязкаПользователя</InformationRegister>
 			<InformationRegister>ВремяУрока</InformationRegister>
 			<InformationRegister>РегистрАдресации</InformationRegister>
