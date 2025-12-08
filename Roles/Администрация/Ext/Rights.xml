@@ -91,6 +91,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.ОценкиСтудентов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Subsystem.Администрация.Subsystem.Образование</name>
 		<right>
 			<name>View</name>
