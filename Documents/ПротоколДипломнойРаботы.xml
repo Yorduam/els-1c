@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
-	<Document uuid="91eb9871-813b-491d-a131-7b86d6b9ec69">
+	<Document uuid="7a155451-4ea5-4378-b724-6fac18bfa700">
 		<InternalInfo>
-			<xr:GeneratedType name="DocumentObject.ПротоколКурсовойРаботы" category="Object">
-				<xr:TypeId>999cbde0-d110-4a15-a890-4abc4eb9748b</xr:TypeId>
-				<xr:ValueId>92f3c7f2-de52-4d7a-8d21-c818299f3527</xr:ValueId>
+			<xr:GeneratedType name="DocumentObject.ПротоколДипломнойРаботы" category="Object">
+				<xr:TypeId>a7ed4873-658a-4884-8034-c2d665f83519</xr:TypeId>
+				<xr:ValueId>055f96f8-673e-4585-bb48-e897709f6c1f</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentRef.ПротоколКурсовойРаботы" category="Ref">
-				<xr:TypeId>9db96434-32d4-409f-886c-d75fa0a13a09</xr:TypeId>
-				<xr:ValueId>41032c94-b35d-4a27-b940-9814e63f6369</xr:ValueId>
+			<xr:GeneratedType name="DocumentRef.ПротоколДипломнойРаботы" category="Ref">
+				<xr:TypeId>b9b116bc-d742-4707-b9d6-75800b2b06ab</xr:TypeId>
+				<xr:ValueId>2175719c-7c97-421e-8941-6275ab69711f</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentSelection.ПротоколКурсовойРаботы" category="Selection">
-				<xr:TypeId>d87d5794-a8a3-4222-b4d6-bb826ef5129e</xr:TypeId>
-				<xr:ValueId>87c25e30-c163-4b31-85ec-22af2c66a39c</xr:ValueId>
+			<xr:GeneratedType name="DocumentSelection.ПротоколДипломнойРаботы" category="Selection">
+				<xr:TypeId>fd85a7a0-993e-4b43-b037-8286f6b68aa5</xr:TypeId>
+				<xr:ValueId>969c399f-a8c2-43f3-b843-dc2a6d84b2d4</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentList.ПротоколКурсовойРаботы" category="List">
-				<xr:TypeId>86831540-0c96-41a3-8302-73a1f7f4bdfa</xr:TypeId>
-				<xr:ValueId>a9e9945a-b7dd-4211-bbd7-692c5c3c3f5d</xr:ValueId>
+			<xr:GeneratedType name="DocumentList.ПротоколДипломнойРаботы" category="List">
+				<xr:TypeId>0f4ba586-2c39-47c7-bfe3-8ae5e0d050e2</xr:TypeId>
+				<xr:ValueId>5892eb53-e44a-4594-8450-29098c677b79</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentManager.ПротоколКурсовойРаботы" category="Manager">
-				<xr:TypeId>e1329262-e10c-4d2e-8488-e420b49b492d</xr:TypeId>
-				<xr:ValueId>dbbba52a-215a-4a44-a555-24809a978511</xr:ValueId>
+			<xr:GeneratedType name="DocumentManager.ПротоколДипломнойРаботы" category="Manager">
+				<xr:TypeId>16050ff2-23bb-4734-82cd-0727591169e7</xr:TypeId>
+				<xr:ValueId>9099b349-b526-4ca5-b26d-cc98f1cb04a7</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ПротоколКурсовойРаботы</Name>
+			<Name>ПротоколДипломнойРаботы</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Протокол курсовой работы</v8:content>
+					<v8:content>Протокол дипломной работы</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -43,13 +43,13 @@
 			<Characteristics/>
 			<BasedOn/>
 			<InputByString>
-				<xr:Field>Document.ПротоколКурсовойРаботы.StandardAttribute.Number</xr:Field>
+				<xr:Field>Document.ПротоколДипломнойРаботы.StandardAttribute.Number</xr:Field>
 			</InputByString>
 			<CreateOnInput>Use</CreateOnInput>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Document.ПротоколКурсовойРаботы.Form.ФормаДокумента</DefaultObjectForm>
+			<DefaultObjectForm/>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -60,9 +60,7 @@
 			<RegisterRecordsDeletion>AutoDeleteOnUnpost</RegisterRecordsDeletion>
 			<RegisterRecordsWritingOnPost>WriteSelected</RegisterRecordsWritingOnPost>
 			<SequenceFilling>AutoFill</SequenceFilling>
-			<RegisterRecords>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИтоговыеОценки</xr:Item>
-			</RegisterRecords>
+			<RegisterRecords/>
 			<PostInPrivilegedMode>true</PostInPrivilegedMode>
 			<UnpostInPrivilegedMode>true</UnpostInPrivilegedMode>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -80,7 +78,7 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="a530472a-e0bf-4fb6-bf1b-09a3dc1fe758">
+			<Attribute uuid="e2392f55-97e0-463d-80c4-b4b333600db7">
 				<Properties>
 					<Name>Группа</Name>
 					<Synonym>
@@ -119,7 +117,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="799b7692-beb4-4cb1-abca-5bf776495576">
+			<Attribute uuid="76f15af0-3479-472d-bde2-524ef289e4a4">
 				<Properties>
 					<Name>Обучающийся</Name>
 					<Synonym>
@@ -158,85 +156,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="94594be8-f56a-4694-b592-0cea53481123">
-				<Properties>
-					<Name>Семестр</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Семестр</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:CatalogRef.ПериодыОбучения</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="14f30b19-915e-4d12-a759-5a190e51bcb2">
-				<Properties>
-					<Name>Дисциплина</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Дисциплина</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:CatalogRef.Дисциплины</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="571ff905-2834-41d8-b694-0c765cb8579f">
+			<Attribute uuid="7645324c-5448-438e-989a-6c0dd1b2882d">
 				<Properties>
 					<Name>ДатаЗащиты</Name>
 					<Synonym>
@@ -278,7 +198,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="24a27454-3b9e-44fe-96ae-911be546736c">
+			<Attribute uuid="f3c5865e-e99b-4721-ba1d-e5699c5ea17d">
 				<Properties>
 					<Name>Руководитель</Name>
 					<Synonym>
@@ -317,7 +237,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="b4d03f0e-5897-4209-9ca5-900c09356192">
+			<Attribute uuid="89f7b5f6-2bfc-4ff6-a365-edd4ac17c776">
 				<Properties>
 					<Name>Тема</Name>
 					<Synonym>
@@ -328,11 +248,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
+						<v8:Type>cfg:CatalogRef.ТемыРабот</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -345,7 +261,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:string"/>
+					<FillValue xsi:nil="true"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
@@ -360,7 +276,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="382aea02-ef0a-49ef-9322-c4715644926b">
+			<Attribute uuid="ef3287f7-7245-468d-819c-e5d8611afd57">
 				<Properties>
 					<Name>НаПримере</Name>
 					<Synonym>
@@ -403,7 +319,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="10de6cfe-6512-45a6-b11e-4ab68a8b2bd7">
+			<Attribute uuid="406d9a61-38e4-4845-967b-e03a048437e2">
 				<Properties>
 					<Name>Оценка</Name>
 					<Synonym>
@@ -442,7 +358,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="bdd7fab1-a69e-432e-9534-7a5556ff0464">
+			<Attribute uuid="98fbc698-5879-43d7-9584-1e2f8b38bf1f">
 				<Properties>
 					<Name>Основание</Name>
 					<Synonym>
@@ -453,7 +369,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:DocumentRef.НазначениеКурсовойРаботы</v8:Type>
+						<v8:Type>cfg:DocumentRef.НазначениеДипломнойРаботы</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -481,7 +397,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="cee05e57-049c-4a8d-8ea7-a0ef1b7566a9">
+			<Attribute uuid="9d308dd3-c05f-4537-8284-b268f750c5bc">
 				<Properties>
 					<Name>Автор</Name>
 					<Synonym>
@@ -520,16 +436,15 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Form>ФормаДокумента</Form>
-			<TabularSection uuid="68da6516-786b-4d0a-adf4-84dda3249972">
+			<TabularSection uuid="8d6a7d09-9915-435a-b93d-045e9ceec939">
 				<InternalInfo>
-					<xr:GeneratedType name="DocumentTabularSection.ПротоколКурсовойРаботы.ОтзывКомиссии" category="TabularSection">
-						<xr:TypeId>1266aff5-8d73-4af0-8d66-959046a554b9</xr:TypeId>
-						<xr:ValueId>2472523b-e69d-476a-bc8f-e5c6f0e25565</xr:ValueId>
+					<xr:GeneratedType name="DocumentTabularSection.ПротоколДипломнойРаботы.ОтзывКомиссии" category="TabularSection">
+						<xr:TypeId>fa924cc7-2972-4fcc-8fc9-022aa52c5431</xr:TypeId>
+						<xr:ValueId>1357e2e9-ddd8-4fe2-b3be-f3b6ef120890</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DocumentTabularSectionRow.ПротоколКурсовойРаботы.ОтзывКомиссии" category="TabularSectionRow">
-						<xr:TypeId>d77782a9-4238-43ed-9510-c5c8b8c920e3</xr:TypeId>
-						<xr:ValueId>e4b0c9f6-193a-4a6c-8ba8-b4b90555efb8</xr:ValueId>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ПротоколДипломнойРаботы.ОтзывКомиссии" category="TabularSectionRow">
+						<xr:TypeId>710ed5ca-35b5-4159-87ae-6cf48438c5fa</xr:TypeId>
+						<xr:ValueId>6f170ff6-700e-4ca9-af1b-f14f1687faee</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
@@ -545,7 +460,7 @@
 					<FillChecking>DontCheck</FillChecking>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="8d519779-82e0-4bb0-a726-f4213fbf6145">
+					<Attribute uuid="61d85e91-03be-43a4-86c3-8a1b5d8f25f0">
 						<Properties>
 							<Name>ФИОЧленаКомиссии</Name>
 							<Synonym>
@@ -582,7 +497,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="5060ce8c-b131-4865-87c6-c6e3e387fc21">
+					<Attribute uuid="3d77911a-21bb-4217-abaa-4e7307402665">
 						<Properties>
 							<Name>Отзыв</Name>
 							<Synonym>

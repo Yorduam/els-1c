@@ -97,7 +97,6 @@
 		</InputField>
 		<InputField name="ДатаЗащиты" id="16">
 			<DataPath>Объект.ДатаЗащиты</DataPath>
-			<ReadOnly>true</ReadOnly>
 			<EditMode>EnterOnInput</EditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="ДатаЗащитыКонтекстноеМеню" id="17"/>
@@ -145,7 +144,7 @@
 					<ExtendedTooltip name="ОбучающиесяНомерСтрокиРасширеннаяПодсказка" id="40"/>
 				</LabelField>
 				<InputField name="ОбучающиесяОбучающийся" id="41">
-					<DataPath>Объект.Обучающиеся.Обучающийся</DataPath>
+					<DataPath>Объект.Обучающиеся.ФИО</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ОбучающиесяОбучающийсяКонтекстноеМеню" id="42"/>

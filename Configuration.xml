@@ -296,7 +296,8 @@
 			<Document>ПроведениеЗанятия</Document>
 			<Document>НазначениеКурсовойРаботы</Document>
 			<Document>ПротоколКурсовойРаботы</Document>
-			<Document>_ДипломнаяРабота</Document>
+			<Document>НазначениеДипломнойРаботы</Document>
+			<Document>ПротоколДипломнойРаботы</Document>
 			<Document>_ВыпускОбучающихся</Document>
 			<Document>_ПроведениеДЭ</Document>
 			<DocumentNumerator>ДвижениеКонтингента</DocumentNumerator>

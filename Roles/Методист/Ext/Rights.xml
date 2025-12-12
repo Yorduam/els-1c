@@ -485,6 +485,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.НазначениеДипломнойРаботы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ЗачислениеОбучающихся.TabularSection.Абитуриенты.Attribute.Группа</name>
 		<right>
 			<name>View</name>
