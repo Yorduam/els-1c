@@ -386,6 +386,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ПротоколДипломнойРаботы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ОтчислениеОбучающихся.TabularSection.Абитуриенты.Attribute.Группа</name>
 		<right>
 			<name>View</name>

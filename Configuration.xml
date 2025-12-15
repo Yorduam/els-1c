@@ -298,7 +298,7 @@
 			<Document>ПротоколКурсовойРаботы</Document>
 			<Document>НазначениеДипломнойРаботы</Document>
 			<Document>ПротоколДипломнойРаботы</Document>
-			<Document>_ВыпускОбучающихся</Document>
+			<Document>ВыпускОбучающихся</Document>
 			<DocumentNumerator>ДвижениеКонтингента</DocumentNumerator>
 			<Enum>ВидыДней</Enum>
 			<Enum>ДвижениеКонтингента</Enum>
