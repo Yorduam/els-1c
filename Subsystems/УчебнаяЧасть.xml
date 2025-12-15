@@ -28,7 +28,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.СоставлениеРасписания</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РасписаниеНаДату</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document._ВыпускОбучающихся</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document._ПроведениеДЭ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ec914d5f-8b6b-4486-8a81-c46c50b073fb</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПротоколДипломнойРаботы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПротоколКурсовойРаботы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.НазначениеКурсовойРаботы</xr:Item>

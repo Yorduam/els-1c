@@ -299,7 +299,6 @@
 			<Document>НазначениеДипломнойРаботы</Document>
 			<Document>ПротоколДипломнойРаботы</Document>
 			<Document>_ВыпускОбучающихся</Document>
-			<Document>_ПроведениеДЭ</Document>
 			<DocumentNumerator>ДвижениеКонтингента</DocumentNumerator>
 			<Enum>ВидыДней</Enum>
 			<Enum>ДвижениеКонтингента</Enum>
