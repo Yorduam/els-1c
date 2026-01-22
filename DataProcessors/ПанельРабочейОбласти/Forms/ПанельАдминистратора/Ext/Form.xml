@@ -76,7 +76,7 @@
 											<v8:content>Всего пользователей: </v8:content>
 										</v8:item>
 									</Title>
-									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 									<ContextMenu name="ВсегоПользователейКонтекстноеМеню" id="2"/>
 									<ExtendedTooltip name="ВсегоПользователейРасширеннаяПодсказка" id="3"/>
 								</LabelDecoration>
@@ -110,38 +110,6 @@
 		</UsualGroup>
 	</ChildItems>
 	<Attributes>
-		<Attribute name="ОбщийКонтингент" id="1">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Общий контингент</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>5</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-				</v8:NumberQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="КонтингентБезГруппы" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Контингент без группы</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>5</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-				</v8:NumberQualifiers>
-			</Type>
-		</Attribute>
 		<Attribute name="Статистика" id="3">
 			<Title>
 				<v8:item>

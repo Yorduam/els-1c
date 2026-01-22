@@ -25,6 +25,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Report.СоставГруппы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ВыводКонтингента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ВыпускОбучающихся</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">BusinessProcess.ОформилениеГруппы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Task.ЗадачаОформленияГруппы</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

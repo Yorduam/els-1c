@@ -23,9 +23,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Отметки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor._ЖурналЗанятия</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПроведениеЗанятия</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Task._ЗадачаВедениеЖурнала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">16f9f9b2-0425-4bba-9020-ea8b6c114682</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РасписаниеПреподавателя</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИтоговыеОценки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">61eb8230-461a-41cb-8aec-52da462ceddb</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

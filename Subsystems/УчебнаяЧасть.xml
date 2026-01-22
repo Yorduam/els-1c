@@ -28,12 +28,13 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.СоставлениеРасписания</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РасписаниеНаДату</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ВыпускОбучающихся</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">ec914d5f-8b6b-4486-8a81-c46c50b073fb</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПротоколДипломнойРаботы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПротоколКурсовойРаботы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.НазначениеКурсовойРаботы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИтоговыеОценки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.НазначениеДипломнойРаботы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Task.ЗадачаОформленияГруппы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">BusinessProcess.ОформилениеГруппы</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

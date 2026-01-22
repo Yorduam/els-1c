@@ -175,6 +175,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Task.ЗадачаОформленияГруппы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.АктуальностьКонтингента</name>
 		<right>
 			<name>Read</name>
@@ -520,6 +527,13 @@
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОформилениеГруппы</name>
+		<right>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 	</object>

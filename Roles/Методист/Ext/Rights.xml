@@ -302,6 +302,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Task.ЗадачаОформленияГруппы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ПереводОбучающихся.TabularSection.Абитуриенты</name>
 		<right>
 			<name>View</name>
@@ -694,6 +701,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>BusinessProcess.ОформилениеГруппы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
