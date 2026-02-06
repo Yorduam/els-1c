@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>УчебныйПлан</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Курс</dataPath>
+			<field>Курс</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дисциплина</dataPath>
+			<field>Дисциплина</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Группа</dataPath>
+			<field>Группа</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВсегоЧасовОстаток</dataPath>
+			<field>ВсегоЧасовОстаток</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧасыЛекцийОстаток</dataPath>
+			<field>ЧасыЛекцийОстаток</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧасыПрактикиОстаток</dataPath>
+			<field>ЧасыПрактикиОстаток</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧасыАттестацииОстаток</dataPath>
+			<field>ЧасыАттестацииОстаток</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РабочаяПрограмма</dataPath>
+			<field>РабочаяПрограмма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Семестр</dataPath>
+			<field>Семестр</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	УчебныйПланОстатки.Дисциплина КАК Дисциплина,
+	УчебныйПланОстатки.ВсегоЧасовОстаток КАК ВсегоЧасовОстаток,
+	УчебныйПланОстатки.ЧасыЛекцийОстаток КАК ЧасыЛекцийОстаток,
+	УчебныйПланОстатки.ЧасыПрактикиОстаток КАК ЧасыПрактикиОстаток,
+	УчебныйПланОстатки.ЧасыАттестацииОстаток КАК ЧасыАттестацииОстаток,
+	УчебныйПланОстатки.Группа КАК Группа
+ИЗ
+	РегистрНакопления.УчебныйПлан.Остатки КАК УчебныйПланОстатки</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ЧисленностьГруппы</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Группа</dataPath>
+			<field>Группа</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоОстаток</dataPath>
+			<field>КоличествоОстаток</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВнебюджетОстаток</dataPath>
+			<field>ВнебюджетОстаток</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БюджетОстаток</dataPath>
+			<field>БюджетОстаток</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЧисленностьГруппыОстатки.Группа КАК Группа,
+	ЧисленностьГруппыОстатки.КоличествоОстаток КАК КоличествоОстаток,
+	ЧисленностьГруппыОстатки.БюджетОстаток КАК БюджетОстаток,
+	ЧисленностьГруппыОстатки.ВнебюджетОстаток КАК ВнебюджетОстаток
+ИЗ
+	РегистрНакопления.ЧисленностьГруппы.Остатки КАК ЧисленностьГруппыОстатки</query>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>ЧисленностьГруппы</sourceDataSet>
+		<destinationDataSet>УчебныйПлан</destinationDataSet>
+		<sourceExpression>Группа</sourceExpression>
+		<destinationExpression>Группа</destinationExpression>
+	</dataSetLink>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Дисциплина</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВсегоЧасовОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЧасыЛекцийОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЧасыПрактикиОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЧасыАттестацииОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>БюджетОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВнебюджетОстаток</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Группа</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

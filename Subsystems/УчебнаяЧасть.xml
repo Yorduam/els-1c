@@ -35,6 +35,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.НазначениеДипломнойРаботы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Task.ЗадачаОформленияГруппы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">BusinessProcess.ОформилениеГруппы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">BusinessProcess.ЗачислениеАбитуриентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Task.ЗадачаОформлениеАбитуриентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.УспеваемостьГруппы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СредняяУспеваемость</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.НагрузочныйЛист</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

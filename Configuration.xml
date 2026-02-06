@@ -315,7 +315,9 @@
 			<Report>СоставГруппы</Report>
 			<Report>ВыводРабочихПрограмм</Report>
 			<Report>ВыводКонтингента</Report>
-			<Report>Проверка</Report>
+			<Report>УспеваемостьГруппы</Report>
+			<Report>СредняяУспеваемость</Report>
+			<Report>НагрузочныйЛист</Report>
 			<DataProcessor>Расписание</DataProcessor>
 			<DataProcessor>РасписаниеПреподавателя</DataProcessor>
 			<DataProcessor>_ЖурналЗанятия</DataProcessor>
@@ -331,7 +333,11 @@
 			<AccumulationRegister>АктивныйКонтингент</AccumulationRegister>
 			<AccumulationRegister>УчебныйПлан</AccumulationRegister>
 			<BusinessProcess>ОформилениеГруппы</BusinessProcess>
+			<BusinessProcess>ЗачислениеАбитуриентов</BusinessProcess>
+			<BusinessProcess>ПроведениеЗанятия</BusinessProcess>
 			<Task>ЗадачаОформленияГруппы</Task>
+			<Task>ЗадачаОформлениеАбитуриентов</Task>
+			<Task>ЗадачаПроведенияЗанятия</Task>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

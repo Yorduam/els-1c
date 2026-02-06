@@ -1,29 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
-	<Report uuid="eb549f06-55fb-4165-8426-36c5520cef75">
+	<Report uuid="f30e72d9-e632-4b0a-8608-af8eba373622">
 		<InternalInfo>
-			<xr:GeneratedType name="ReportObject.Проверка" category="Object">
-				<xr:TypeId>3065c5d5-e268-4bbb-9176-e2cb636655ab</xr:TypeId>
-				<xr:ValueId>a70ab015-ff8c-44a1-ba14-98f5f452a1a6</xr:ValueId>
+			<xr:GeneratedType name="ReportObject.СредняяУспеваемость" category="Object">
+				<xr:TypeId>1a7b7ce2-52ad-4228-843c-f6e469a66f55</xr:TypeId>
+				<xr:ValueId>0fe9d174-b900-479f-a363-d13cc6f0e356</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ReportManager.Проверка" category="Manager">
-				<xr:TypeId>0f34abf2-35fa-4fe0-806d-f0367035eb81</xr:TypeId>
-				<xr:ValueId>868e8005-99eb-4146-8262-15202ceb4626</xr:ValueId>
+			<xr:GeneratedType name="ReportManager.СредняяУспеваемость" category="Manager">
+				<xr:TypeId>2a479465-d08c-4fcd-a0ef-3e5fe63f1262</xr:TypeId>
+				<xr:ValueId>33fd3441-7ab7-4666-b897-925e8d4436b7</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Проверка</Name>
+			<Name>СредняяУспеваемость</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Проверка</v8:content>
+					<v8:content>Средняя успеваемость</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
 			<DefaultForm/>
 			<AuxiliaryForm/>
-			<MainDataCompositionSchema>Report.Проверка.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
+			<MainDataCompositionSchema>Report.СредняяУспеваемость.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
 			<DefaultSettingsForm/>
 			<AuxiliarySettingsForm/>
 			<DefaultVariantForm/>

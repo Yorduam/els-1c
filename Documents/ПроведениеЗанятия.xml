@@ -833,6 +833,7 @@
 				</ChildObjects>
 			</TabularSection>
 			<Template>Печать</Template>
+			<Template>Ведомость</Template>
 			<Command uuid="57310c44-a530-4d12-85b0-b9bb3aeb3e45">
 				<Properties>
 					<Name>Печать</Name>

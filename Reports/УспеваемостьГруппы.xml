@@ -1,39 +1,40 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
-	<DataProcessor uuid="1fca2c33-d744-4908-8519-6bc12556a9f2">
+	<Report uuid="e18b7294-0a42-48ef-81b8-bc3b93d42cdb">
 		<InternalInfo>
-			<xr:GeneratedType name="DataProcessorObject.ПанельРабочейОбласти" category="Object">
-				<xr:TypeId>d780e559-fe6e-4449-8522-4b985a047868</xr:TypeId>
-				<xr:ValueId>ae03ef81-2b46-4fff-b864-289772e69c3f</xr:ValueId>
+			<xr:GeneratedType name="ReportObject.УспеваемостьГруппы" category="Object">
+				<xr:TypeId>6ac2f54e-7612-4e2f-80b3-c676bf33899a</xr:TypeId>
+				<xr:ValueId>dbd7686a-8d6e-49e2-8d03-51f78e5ebff1</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DataProcessorManager.ПанельРабочейОбласти" category="Manager">
-				<xr:TypeId>e361759f-c06a-4bbb-b92c-edc710d216e4</xr:TypeId>
-				<xr:ValueId>9048c22b-0fcb-419a-b927-b9ed6814e18f</xr:ValueId>
+			<xr:GeneratedType name="ReportManager.УспеваемостьГруппы" category="Manager">
+				<xr:TypeId>ee666623-123d-45bb-853b-cf19342cbbc3</xr:TypeId>
+				<xr:ValueId>11b4926e-4b98-4e90-acbf-6aa63b2b4a87</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ПанельРабочейОбласти</Name>
+			<Name>УспеваемостьГруппы</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Панель рабочей области</v8:content>
+					<v8:content>Успеваемость группы</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<UseStandardCommands>false</UseStandardCommands>
+			<UseStandardCommands>true</UseStandardCommands>
 			<DefaultForm/>
 			<AuxiliaryForm/>
+			<MainDataCompositionSchema>Report.УспеваемостьГруппы.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
+			<DefaultSettingsForm/>
+			<AuxiliarySettingsForm/>
+			<DefaultVariantForm/>
+			<VariantsStorage/>
+			<SettingsStorage/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<ExtendedPresentation/>
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Form>ПанельАдминистратора</Form>
-			<Form>ПанельАдминистрации</Form>
-			<Form>ПанельЗавуча</Form>
-			<Form>ПанельМетодиста</Form>
-			<Form>ПанельПреподавателя</Form>
-			<Form>ПанельОтдела</Form>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 		</ChildObjects>
-	</DataProcessor>
+	</Report>
 </MetaDataObject>
